@@ -1,6 +1,6 @@
 body {
   background-color: #a9a9a9;
-  font-family: helvetica;
+  font-family: helvetica, Arial, Helvetica, sans-serif;
 }
 
 .title {
@@ -28,12 +28,13 @@ body {
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-weight: bold;
 }
 
 .content {
   background-color: #ffff;
   border-left-width: 2px;
-  font: helvetica;
+  font-family: 'Jeju Gothic', sans-serif;
   float: left;
   width: 100%;
 }
@@ -51,6 +52,7 @@ body {
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-weight: bold;
 }
 
 .inner_blank {
@@ -68,6 +70,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px; 
   line-height: 150%;
+
   font-size: small;
   width: 600px;
   float: left;
@@ -85,4 +88,5 @@ body {
 
 .inner_image_footer {
   margin-bottom: 20px;
+  font-size: small;
 }
