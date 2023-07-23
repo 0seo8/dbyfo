@@ -61,7 +61,7 @@ function Content() {
                     <img className="image_file" src="img/photo1.png" />
                     <div className="inner_image_footer">
                       {' '}
-                      Smart fit wear, Loop core. 'Just put it on.''{' '}
+                      Smart fit wear, Loop core. &apos;Just put it on.&apos;{' '}
                     </div>
                   </div>
                 </div>
