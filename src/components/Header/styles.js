@@ -1,18 +1,22 @@
 import styled from 'styled-components';
 
 export const Header = styled.div`
-  position: fixed;
+  background-color: #a9a9a9;
+  position: relative;
   line-height: 18px;
   width: 100%;
   min-width: 1000px;
-  padding: 24px;
   min-height: 30px;
   z-index: 1000;
   text-align: start;
 `;
 export const HeaderContainer = styled.div`
-  padding: 0 36px;
-  position: relative;
+  background-color: #a9a9a9;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  top: 0;
+  position: fixed;
   display: flex;
   flex-flow: column;
 `;

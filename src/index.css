@@ -12,7 +12,7 @@ a:active {
 }
 
 .pages {
-  padding-top: 160px;
+  padding-top: 120px;
 }
 
 .title {
@@ -23,7 +23,7 @@ a:active {
   border-bottom-width: 0.5px;
   padding-left: 20px;
   padding-top: 10px;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
   font-weight: bold;
 }
 
@@ -55,7 +55,7 @@ a:active {
   height: 16px;
   padding-left: 20px;
   padding-top: 10px;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
   font-weight: bold;
 }
 
@@ -80,7 +80,7 @@ a:active {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
   line-height: 150%;
 
   font-size: small;

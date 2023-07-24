@@ -1,7 +1,10 @@
 import * as S from './styles';
 import { NavLink } from 'react-router-dom';
-
+import { onRollup, onRollDown } from '../../store/uiSlice';
+import { useDispatch } from 'react-redux';
 const Header = () => {
+  const dispatch = useDispatch();
+
   return (
     <S.Header>
       <S.HeaderContainer>
@@ -30,9 +33,9 @@ const Header = () => {
           </S.MenuBar>
           <S.MenuSideBar>
             <S.ControllBtnWrapper>
-              <div>+</div>
+              <div onClick={() => dispatch(onRollup())}>+</div>
               <div>/</div>
-              <div>-</div>
+              <div onClick={() => dispatch(onRollDown())}>-</div>
             </S.ControllBtnWrapper>
             <S.SearchWrapper>
               <input placeholder="Search" />

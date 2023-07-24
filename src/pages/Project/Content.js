@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import 'swiper/css';
 import ImageSlider from '../../components/ImageSlider';
-function Content() {
+export function Content() {
   const [visible, setVisible] = useState(false);
   const obj = {
     data: [
@@ -73,5 +73,3 @@ function Content() {
     </div>
   );
 }
-
-export default Content;
