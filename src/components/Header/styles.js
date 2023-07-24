@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.div`
-  background-color: #a9a9a9;
+  background-color: var(--main-background-color);
   position: relative;
   line-height: 18px;
   width: 100%;
@@ -11,7 +11,7 @@ export const Header = styled.div`
   text-align: start;
 `;
 export const HeaderContainer = styled.div`
-  background-color: #a9a9a9;
+  background-color: var(--main-background-color);
   left: 0;
   right: 0;
   padding: 24px;
@@ -49,6 +49,7 @@ export const ControllBtnWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 60px;
+  cursor: pointer;
 `;
 
 export const SearchWrapper = styled.div`

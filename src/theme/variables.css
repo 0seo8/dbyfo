@@ -1,0 +1,8 @@
+:root {
+    --main-font-family: helvetica, Arial, Helvetica, sans-serif;
+    --main-background-color: #a9a9a9;
+    --main-acitvity-color: cyan;
+
+/*    상의 되지 않은 컬러 */
+    --font-color-gray:#B2AEAD;
+}

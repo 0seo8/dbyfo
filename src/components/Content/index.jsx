@@ -1,6 +1,5 @@
 import * as S from './styes';
 import { useState } from 'react';
-import 'swiper/css';
 import ImageSlider from '../../components/ImageSlider';
 import { useSelector } from 'react-redux';
 
@@ -17,9 +16,10 @@ const data = [
       producer: null,
     },
     img: [
-      'https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E',
-      'https://vungtaulocalguide.com/wp-content/uploads/2023/04/pomeranian-spitz-smiling-lying-house-260nw-2169338377.jpg',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpC3HMyo06I9XH90y6j9wjziBghapF2xueFh1iHrTGlnma0VqW61oRDmMr6XH1F5VM2UU&usqp=CAU',
+      'https://cdn.imweb.me/thumbnail/20230720/807575f8d46f6.jpg',
+      'https://cdn.imweb.me/thumbnail/20230720/2abf5929eb24b.jpg',
+      'https://cdn.imweb.me/thumbnail/20230720/ecbfd7b6c440b.jpg',
+      'https://cdn.imweb.me/thumbnail/20230720/a50ef8c737d89.jpg',
     ],
   },
   {
@@ -34,9 +34,9 @@ const data = [
       producer: null,
     },
     img: [
-      'https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E',
-      'https://vungtaulocalguide.com/wp-content/uploads/2023/04/pomeranian-spitz-smiling-lying-house-260nw-2169338377.jpg',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpC3HMyo06I9XH90y6j9wjziBghapF2xueFh1iHrTGlnma0VqW61oRDmMr6XH1F5VM2UU&usqp=CAU',
+      'https://cdn.imweb.me/thumbnail/20230720/807575f8d46f6.jpg',
+      'https://cdn.imweb.me/thumbnail/20230720/ecbfd7b6c440b.jpg',
+      'https://cdn.imweb.me/thumbnail/20230720/a50ef8c737d89.jpg',
     ],
   },
   {
@@ -51,9 +51,9 @@ const data = [
       producer: null,
     },
     img: [
-      'https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E',
-      'https://vungtaulocalguide.com/wp-content/uploads/2023/04/pomeranian-spitz-smiling-lying-house-260nw-2169338377.jpg',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpC3HMyo06I9XH90y6j9wjziBghapF2xueFh1iHrTGlnma0VqW61oRDmMr6XH1F5VM2UU&usqp=CAU',
+      'https://cdn.imweb.me/thumbnail/20230720/807575f8d46f6.jpg',
+      'https://cdn.imweb.me/thumbnail/20230720/ecbfd7b6c440b.jpg',
+      'https://cdn.imweb.me/thumbnail/20230720/a50ef8c737d89.jpg',
     ],
   },
 ];
@@ -92,9 +92,9 @@ const Content = () => {
                   {item.sub.client && <p>Client: {item.sub.client}</p>}
                 </S.SubContent>
               </S.ListText>
-              <div>
+              <S.SwiperWrapper>
                 <ImageSlider images={item.img} />
-              </div>
+              </S.SwiperWrapper>
             </S.ListContent>
           )}
         </S.ListWrapper>
