@@ -47,6 +47,10 @@ export const ListTitle = styled.div`
   }
 `;
 
+export const InformationCotnetWrapper = styled.div`
+  padding: 0 40px 30px;
+`;
+
 export const ListContent = styled.div`
   font-family: 'Jeju Gothic', sans-serif;
   display: flex;

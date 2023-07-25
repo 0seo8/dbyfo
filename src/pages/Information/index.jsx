@@ -1,10 +1,12 @@
 import * as S from './styles';
-import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useState } from 'react';
 import { data } from './data';
+import Who from '../../components/Who';
+import What from '../../components/What';
+import Awards from '../../components/Awards';
+import Contact from '../../components/Contact';
 const Index = () => {
   const [visibleIndexes, setVisibleIndexes] = useState([]);
-  const ui = useSelector((state) => state.ui.value);
   const handleToggleVisible = (index) => {
     setVisibleIndexes((prevVisibleIndexes) =>
       prevVisibleIndexes.includes(index)
@@ -12,18 +14,29 @@ const Index = () => {
         : [...prevVisibleIndexes, index],
     );
   };
+  const renderComponent = (path) => {
+    switch (path) {
+      case 'Who':
+        return <Who />;
+      case 'What':
+        return <What />;
+      case 'Awards':
+        return <Awards />;
+      case 'Contact':
+        return <Contact />;
+      default:
+        return null;
+    }
+  };
 
   return (
     <S.Container>
       <S.ProjectListWrapper>
         {data.map((item, idx) => (
-          <S.ListWrapper
-            key={idx}
-            isActive={visibleIndexes.includes(idx) || ui}
-          >
+          <S.ListWrapper key={idx} isActive={visibleIndexes.includes(idx)}>
             <S.ListTitle
               onClick={() => handleToggleVisible(idx)}
-              isActive={visibleIndexes.includes(idx) || ui}
+              isActive={visibleIndexes.includes(idx)}
             >
               <div>
                 <h2>{item.title}</h2>
@@ -32,8 +45,10 @@ const Index = () => {
                 <span>{item.desc}</span>
               </div>
             </S.ListTitle>
-            {(visibleIndexes.includes(idx) || ui) && (
-              <S.ListContent></S.ListContent>
+            {visibleIndexes.includes(idx) && (
+              <S.InformationCotnetWrapper>
+                {renderComponent(item.path)}
+              </S.InformationCotnetWrapper>
             )}
           </S.ListWrapper>
         ))}
