@@ -12,7 +12,6 @@ const Header = () => {
     const searchValue = e.target.search.value.trim();
     dispatch(setSearchValue(searchValue));
   };
-  console.log("pathname === '/information'", pathname !== '/information');
 
   return (
     <S.Header color={pathname !== '/information'}>
