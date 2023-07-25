@@ -41,9 +41,11 @@ const Index = () => {
               <div>
                 <h2>{item.title}</h2>
               </div>
-              <div>
-                <span>{item.desc}</span>
-              </div>
+              {visibleIndexes.includes(idx) || (
+                <div>
+                  <span>{item.desc}</span>
+                </div>
+              )}
             </S.ListTitle>
             {visibleIndexes.includes(idx) && (
               <S.InformationCotnetWrapper>
