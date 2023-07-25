@@ -1,7 +1,9 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Header = styled.div`
   background-color: var(--main-background-color);
+  color: ${(props) => (props.color ? '#fff' : '#000')};
   position: relative;
   line-height: 18px;
   width: 100%;
@@ -9,6 +11,10 @@ export const Header = styled.div`
   min-height: 30px;
   z-index: 1000;
   text-align: start;
+  a {
+    text-decoration: none;
+    color: ${(props) => (props.color ? '#fff' : '#000')};
+  }
 `;
 export const HeaderContainer = styled.div`
   background-color: var(--main-background-color);
@@ -19,6 +25,14 @@ export const HeaderContainer = styled.div`
   position: fixed;
   display: flex;
   flex-flow: column;
+`;
+
+export const Link = styled(NavLink)`
+  color: ${(props) => (props.color ? '#fff' : '#000')};
+
+  :active {
+    color: var(--main-acitvity-color);
+  }
 `;
 
 export const LogoLink = styled.h1`

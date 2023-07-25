@@ -1,5 +1,5 @@
 import * as S from './styes';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ImageSlider from '../../components/ImageSlider';
 import { useSelector } from 'react-redux';
 
@@ -68,13 +68,22 @@ const Content = () => {
     );
   };
 
+  useEffect(() => {
+    // UI 상태인 ui가 변경되면 모든 리스트의 상태를 열거나 닫음
+    if (ui) {
+      setVisibleIndexes([...Array(data.length).keys()]);
+    } else {
+      setVisibleIndexes([]);
+    }
+  }, [ui]);
+
   return (
     <S.ProjectListWrapper>
       {data.map((item, idx) => (
-        <S.ListWrapper key={idx} isActive={visibleIndexes.includes(idx) || ui}>
+        <S.ListWrapper key={idx} isActive={visibleIndexes.includes(idx)}>
           <S.ListTitle
             onClick={() => handleToggleVisible(idx)}
-            isActive={visibleIndexes.includes(idx) || ui}
+            isActive={visibleIndexes.includes(idx)}
           >
             <div>
               <h2>{item.title}</h2>
@@ -83,7 +92,7 @@ const Content = () => {
               <span>{item.year}</span>
             </div>
           </S.ListTitle>
-          {(visibleIndexes.includes(idx) || ui) && (
+          {visibleIndexes.includes(idx) && (
             <S.ListContent>
               <S.ListText>
                 <S.Content>{item.content}</S.Content>

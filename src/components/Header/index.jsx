@@ -1,25 +1,30 @@
 import * as S from './styles';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { onRollup, onRollDown } from '../../store/uiSlice';
 import { useDispatch } from 'react-redux';
+
 const Header = () => {
   const dispatch = useDispatch();
-
+  const { pathname } = useLocation();
   return (
-    <S.Header>
+    <S.Header color={pathname === '/'}>
       <S.HeaderContainer>
         <S.LogoLink>DBYFO</S.LogoLink>
         <S.MenuWrapper>
           <S.MenuBar>
             <NavLink
-              to="/project"
-              style={({ isActive }) => ({ color: isActive ? 'cyan' : 'black' })}
+              to="/"
+              style={({ isActive }) => ({
+                color: isActive ? 'cyan' : 'inherit',
+              })}
             >
               PROJECTS
             </NavLink>
             <NavLink
               to="/information"
-              style={({ isActive }) => ({ color: isActive ? 'cyan' : 'black' })}
+              style={({ isActive }) => ({
+                color: isActive ? 'cyan' : 'inherit',
+              })}
             >
               STUDIO INFO.
             </NavLink>
