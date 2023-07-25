@@ -49,11 +49,8 @@ const Header = () => {
               <div>/</div>
               <div onClick={() => dispatch(onRollDown())}>-</div>
             </S.ControllBtnWrapper>
-            <S.SearchWrapper>
-              <form onSubmit={handleSearch}>
-                <input name="search" placeholder="Search" />
-                <button type="submit">Search</button>
-              </form>
+            <S.SearchWrapper onSubmit={handleSearch}>
+              <input name="search" placeholder="Search" />
             </S.SearchWrapper>
           </S.MenuSideBar>
         </S.MenuWrapper>

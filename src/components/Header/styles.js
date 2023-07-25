@@ -46,6 +46,7 @@ export const MenuWrapper = styled.div`
 export const MenuBar = styled.ul`
   width: 700px;
   display: flex;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -61,11 +62,12 @@ export const MenuSideBar = styled.div`
 export const ControllBtnWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
   align-items: center;
-  width: 60px;
+  width: 100%;
   cursor: pointer;
 `;
 
-export const SearchWrapper = styled.div`
-  padding-left: 30px;
+export const SearchWrapper = styled.form`
+  padding-left: 10px;
 `;
