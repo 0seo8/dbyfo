@@ -27,8 +27,8 @@ export const Card = styled.ul`
 `;
 
 export const NameAndCareer = styled.li`
+  border-top: 2px solid #333;
+  font-weight: 600;
   font-size: 14px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  line-height: 3;
 `;
