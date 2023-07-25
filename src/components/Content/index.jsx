@@ -60,6 +60,8 @@ const data = [
 const Content = () => {
   const [visibleIndexes, setVisibleIndexes] = useState([]);
   const ui = useSelector((state) => state.ui.value);
+  const keyword = useSelector((state) => state.ui.searchKeyward);
+
   const handleToggleVisible = (index) => {
     setVisibleIndexes((prevVisibleIndexes) =>
       prevVisibleIndexes.includes(index)
@@ -69,7 +71,6 @@ const Content = () => {
   };
 
   useEffect(() => {
-    // UI 상태인 ui가 변경되면 모든 리스트의 상태를 열거나 닫음
     if (ui) {
       setVisibleIndexes([...Array(data.length).keys()]);
     } else {
@@ -77,6 +78,30 @@ const Content = () => {
     }
   }, [ui]);
 
+  useEffect(() => {
+    // 검색어가 변경되면 리스트를 모두 닫음
+    setVisibleIndexes([]);
+  }, [keyword]);
+
+  useEffect(() => {
+    setVisibleIndexes([]);
+  }, []);
+
+  useEffect(() => {
+    // 검색어가 변경될 때마다 데이터를 순회하여 검색된 아이템들의 인덱스를 찾아냄
+    if (keyword === '') return;
+    const filteredIndexes = data.reduce((acc, item, idx) => {
+      const { title, content } = item;
+      if (
+        title.toLowerCase().includes(keyword.toLowerCase()) ||
+        content.toLowerCase().includes(keyword.toLowerCase())
+      ) {
+        acc.push(idx);
+      }
+      return acc;
+    }, []);
+    setVisibleIndexes(filteredIndexes);
+  }, [keyword]);
   return (
     <S.ProjectListWrapper>
       {data.map((item, idx) => (

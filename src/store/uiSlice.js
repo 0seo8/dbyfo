@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  value: false,
+  value: true,
+  searchKeyward: '',
 };
 
 export const uiSlice = createSlice({
@@ -20,9 +21,12 @@ export const uiSlice = createSlice({
       // eslint-disable-next-line no-unused-expressions
       state.value = false;
     },
+    setSearchValue: (state, action) => {
+      state.searchKeyward = action.payload;
+    },
   },
 });
 
-export const { onRollup, onRollDown } = uiSlice.actions;
+export const { onRollup, onRollDown, setSearchValue } = uiSlice.actions;
 
 export default uiSlice.reducer;

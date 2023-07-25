@@ -1,11 +1,18 @@
 import * as S from './styles';
 import { NavLink, useLocation } from 'react-router-dom';
-import { onRollup, onRollDown } from '../../store/uiSlice';
+import { onRollup, onRollDown, setSearchValue } from '../../store/uiSlice';
 import { useDispatch } from 'react-redux';
 
 const Header = () => {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const searchValue = e.target.search.value.trim();
+    dispatch(setSearchValue(searchValue));
+  };
+
   return (
     <S.Header color={pathname === '/'}>
       <S.HeaderContainer>
@@ -43,7 +50,10 @@ const Header = () => {
               <div onClick={() => dispatch(onRollDown())}>-</div>
             </S.ControllBtnWrapper>
             <S.SearchWrapper>
-              <input placeholder="Search" />
+              <form onSubmit={handleSearch}>
+                <input name="search" placeholder="Search" />
+                <button type="submit">Search</button>
+              </form>
             </S.SearchWrapper>
           </S.MenuSideBar>
         </S.MenuWrapper>
