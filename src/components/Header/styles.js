@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
   background-color: var(--main-background-color);
-  color: ${(props) => (props.color ? '#fff' : '#000')};
+  color: ${(props) => (props.color ? '#000' : '#fff')};
   position: relative;
   line-height: 18px;
   width: 100%;
@@ -13,7 +13,7 @@ export const Header = styled.div`
   text-align: start;
   a {
     text-decoration: none;
-    color: ${(props) => (props.color ? '#fff' : '#000')};
+    color: ${(props) => (props.color ? '#000' : '#fff')};
   }
 `;
 export const HeaderContainer = styled.div`
@@ -28,7 +28,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const Link = styled(NavLink)`
-  color: ${(props) => (props.color ? '#fff' : '#000')};
+  color: ${(props) => (props.color ? '#000' : '#fff')};
 
   :active {
     color: var(--main-acitvity-color);
