@@ -8,8 +8,8 @@ export const Content = styled.h3`
   color: #333;
 `;
 export const CardWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `;
 
 export const Card = styled.ul`

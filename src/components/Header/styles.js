@@ -64,6 +64,7 @@ export const ControllBtnWrapper = styled.div`
   justify-content: space-between;
   padding: 0 20px;
   align-items: center;
+  max-width: 80px;
   width: 100%;
   cursor: pointer;
 `;
