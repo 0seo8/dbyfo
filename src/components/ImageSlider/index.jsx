@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper } from 'swiper/react';
 import { Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
+import * as S from './styles';
 
 // eslint-disable-next-line react/prop-types
 const ImageSlider = ({ images }) => {
@@ -31,9 +32,11 @@ const ImageSlider = ({ images }) => {
       >
         {/* eslint-disable-next-line react/prop-types */}
         {images?.map((imageUrl, index) => (
-          <SwiperSlide key={index} onClick={handleImageClick}>
-            <img src={imageUrl} alt={`Slide ${index}`} />
-          </SwiperSlide>
+          <S.ImageSlide
+            key={index}
+            onClick={handleImageClick}
+            img={imageUrl}
+          ></S.ImageSlide>
         ))}
       </Swiper>
     </>

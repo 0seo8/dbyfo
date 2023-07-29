@@ -24,7 +24,7 @@ export const ListWrapper = styled.div`
 export const ListTitle = styled.div`
   background-color: ${(props) => (props.isActive ? '#fff' : '#a9a9a9')};
   text-align: start;
-  padding: 20px 30px;
+  padding: 20px var(--base-padding-vertical);
   line-height: 25px;
   color: ${(props) => (props.isActive ? '#000' : '#fff')};
 
@@ -33,12 +33,13 @@ export const ListTitle = styled.div`
   }
   div {
     border-left: ${(props) => props.isActive || '2px solid'};
-    padding: 10px;
+    padding: ${(props) => (props.isActive ? '10px 0' : '10px')};
     border-color: ${(props) => (props.isActive ? 'cyan' : 'inherit')};
   }
 
   h2 {
     margin: 0;
+    padding: 0;
     font-size: 18px;
   }
 
@@ -48,7 +49,7 @@ export const ListTitle = styled.div`
 `;
 
 export const InformationCotnetWrapper = styled.div`
-  padding: 0 40px 30px;
+  padding: 0 var(--base-padding-vertical) 30px;
 `;
 
 export const ListContent = styled.div`

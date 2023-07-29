@@ -5,4 +5,8 @@
 
 /*    상의 되지 않은 컬러 */
     --font-color-gray:#B2AEAD;
+
+/*    padding*/
+    --base-padding-vertical: 30px;
+    --base-padding-horizontal: 20px;
 }

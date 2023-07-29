@@ -20,7 +20,7 @@ export const HeaderContainer = styled.div`
   background-color: var(--main-background-color);
   left: 0;
   right: 0;
-  padding: 24px;
+  padding: 24px calc(var(--base-padding-vertical) + 8px);
   top: 0;
   position: fixed;
   display: flex;

@@ -22,7 +22,7 @@ export const ListWrapper = styled.div`
 export const ListTitle = styled.div`
   background-color: ${(props) => (props.isActive ? '#fff' : '#a9a9a9')};
   text-align: start;
-  padding: 20px 30px;
+  padding: 20px var(--base-padding-vertical);
   line-height: 25px;
 
   div:first-child {
@@ -30,7 +30,7 @@ export const ListTitle = styled.div`
   }
   div {
     border-left: ${(props) => props.isActive || '2px solid'};
-    padding: 10px;
+    padding: ${(props) => (props.isActive ? '10px 0' : '10px')};
     border-color: ${(props) => (props.isActive ? 'cyan' : 'inherit')};
   }
 
@@ -40,30 +40,22 @@ export const ListTitle = styled.div`
   }
 
   span {
-    //padding: 10px;
   }
 `;
 
 export const ListContent = styled.div`
   font-family: 'Jeju Gothic', sans-serif;
   display: flex;
-  padding: 0 30px 30px;
+  padding: 0 var(--base-padding-vertical) 30px;
   gap: 120px;
-  align-items: center;
-  img {
-    aspect-ratio: auto 4 / 3;
-    max-width: 600px;
-    max-height: 600px;
-  }
+  align-items: center; 
+}
 
   @media (max-width: 1100px) {
     display: flex;
     flex-flow: column;
     gap: 50px;
-    img {
-      min-width: auto;
-      max-height: 400px;
-    }
+
   }
 
   //@media (max-width: 650px) {
@@ -74,18 +66,18 @@ export const ListContent = styled.div`
   //    min-width: 400px;
   //  }
   //}
-`;
+// `;
 
 export const SwiperWrapper = styled.div`
   aspect-ratio: auto 4 / 3;
   min-width: 600px;
   max-height: 600px;
   flex-grow: 1;
-
-  @media (max-width: 1100px) {
-    min-width: auto;
-    max-height: 400px;
-  }
+  //
+  //@media (max-width: 1100px) {
+  //  min-width: auto;
+  //  max-height: 400px;
+  //}
 `;
 
 export const ListText = styled.div``;

@@ -1,10 +1,11 @@
 import * as S from './styes';
 import { useEffect, useState } from 'react';
-import ImageSlider from '../../components/ImageSlider';
+import ImageSlider from '../ImageSlider';
 import { useSelector } from 'react-redux';
 
 const data = [
   {
+    tag: 'product',
     title: 'Food Branding / 6 - 10 / FIET',
     year: 2023,
     content:
@@ -23,6 +24,7 @@ const data = [
     ],
   },
   {
+    tag: 'product',
     title: 'Food Branding / 6 - 10 / FIET',
     year: 2023,
     content:
@@ -40,6 +42,7 @@ const data = [
     ],
   },
   {
+    tag: 'product',
     title: 'Food Branding / 6 - 10 / FIET',
     year: 2023,
     content:
