@@ -1,12 +1,15 @@
 import * as S from './styles';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { onRollup, onRollDown, setSearchValue } from '../../store/uiSlice';
 import { useDispatch } from 'react-redux';
 import LOGO from '../../assets/logo.png';
+import { BiMinus } from 'react-icons/bi';
+import { AiOutlinePlus } from 'react-icons/ai';
 
 const Header = () => {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -17,7 +20,7 @@ const Header = () => {
   return (
     <S.Header color={pathname !== '/information'}>
       <S.HeaderContainer>
-        <S.LogoLink>
+        <S.LogoLink onClick={() => navigate('/')}>
           <img src={LOGO} alt="logo" width="80px" />
         </S.LogoLink>
         <S.MenuWrapper>
@@ -48,11 +51,15 @@ const Header = () => {
           </S.MenuBar>
           <S.MenuSideBar>
             <S.ControllBtnWrapper>
-              <div onClick={() => dispatch(onRollup())}>+</div>
+              <S.Btn onClick={() => dispatch(onRollup())}>
+                <AiOutlinePlus />
+              </S.Btn>
               {'    '}
-              <div> / </div>
+              <span> / </span>
               {'    '}
-              <div onClick={() => dispatch(onRollDown())}>-</div>
+              <S.Btn onClick={() => dispatch(onRollDown())}>
+                <BiMinus />
+              </S.Btn>
             </S.ControllBtnWrapper>
             <S.SearchWrapper onSubmit={handleSearch}>
               <input name="search" placeholder="Search" />

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
   background-color: var(--main-background-color);
-  //color: ${(props) => (props.color ? '#000' : '#fff')};
   position: relative;
   line-height: 18px;
   width: 100%;
@@ -29,7 +28,6 @@ export const HeaderContainer = styled.div`
 
 export const Link = styled(NavLink)`
   color: ${(props) => (props.color ? '#000' : '#fff')};
-
   :active {
     color: var(--main-acitvity-color);
   }
@@ -38,11 +36,11 @@ export const Link = styled(NavLink)`
 export const LogoLink = styled.h1`
   padding: 15px 0;
   font-size: 20px;
+  cursor: pointer;
 `;
 
 export const MenuWrapper = styled.div`
   display: flex;
-  //font-size: 14px;
 `;
 
 export const MenuBar = styled.ul`
@@ -58,7 +56,6 @@ export const MenuBar = styled.ul`
 
 export const MenuSideBar = styled.div`
   display: flex;
-  //flex-grow: 1;
 `;
 
 export const ControllBtnWrapper = styled.div`
@@ -68,10 +65,14 @@ export const ControllBtnWrapper = styled.div`
   align-items: center;
   max-width: 80px;
   width: 100%;
-  cursor: pointer;
-  div {
-    padding-right: 20px;
+  gap: 20px;
+  svg:hover {
+    color: var(--main-acitvity-color);
   }
+`;
+
+export const Btn = styled.div`
+  cursor: pointer;
 `;
 
 export const SearchWrapper = styled.form`

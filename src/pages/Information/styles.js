@@ -27,7 +27,7 @@ export const ListTitle = styled.div`
       ? 'var(--studiocard-background-color)'
       : 'var(--main-background-color)'};
   text-align: start;
-  padding: 20px var(--base-padding-vertical);
+  padding: 10px var(--base-padding-vertical);
   line-height: var(--studiocard-font-height);
   color: ${(props) =>
     props.isActive ? 'var(--base-font-color)' : 'var(--white-font-color)'};
