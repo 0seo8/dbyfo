@@ -13,7 +13,7 @@ export const Header = styled.div`
   text-align: start;
   a {
     text-decoration: none;
-    //color: ${(props) => (props.color ? '#000' : '#fff')};
+    color: ${(props) => (props.color ? '#000' : 'inherit')};
   }
 `;
 export const HeaderContainer = styled.div`
