@@ -1,12 +1,28 @@
 :root {
     --main-font-family: helvetica, Arial, Helvetica, sans-serif;
-    --main-background-color: #a9a9a9;
-    --main-acitvity-color: cyan;
-
+    --main-background-color: #cbcbcb;
+    --main-acitvity-color: #fcff00;
+    --main-base-size: 14px;
+    --base-font-color: '#000';
+    --white-font-color: '#fff';
 /*    상의 되지 않은 컬러 */
     --font-color-gray:#B2AEAD;
 
 /*    padding*/
     --base-padding-vertical: 30px;
     --base-padding-horizontal: 20px;
+
+
+
+
+
+
+/*    Studio Section color*/
+
+    --studiocard-background-color: #fff;
+    /* 카드 사이사이 여백 */
+    --studiocard-card-padding: 10px;
+    /* 폰트 여백*/
+    --studiocard-font-height: 25px;
+
 }

@@ -2,6 +2,7 @@ import * as S from './styles';
 import { NavLink, useLocation } from 'react-router-dom';
 import { onRollup, onRollDown, setSearchValue } from '../../store/uiSlice';
 import { useDispatch } from 'react-redux';
+import LOGO from '../../assets/logo.png';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -16,13 +17,15 @@ const Header = () => {
   return (
     <S.Header color={pathname !== '/information'}>
       <S.HeaderContainer>
-        <S.LogoLink>DBYFO</S.LogoLink>
+        <S.LogoLink>
+          <img src={LOGO} alt="logo" width="80px" />
+        </S.LogoLink>
         <S.MenuWrapper>
           <S.MenuBar>
             <NavLink
               to="/"
               style={({ isActive }) => ({
-                color: isActive ? 'cyan' : 'inherit',
+                color: isActive ? 'var(--main-acitvity-color)' : 'inherit',
               })}
             >
               PROJECTS
@@ -30,13 +33,13 @@ const Header = () => {
             <NavLink
               to="/information"
               style={({ isActive }) => ({
-                color: isActive ? 'cyan' : 'inherit',
+                color: isActive ? 'var(--main-acitvity-color)' : 'inherit',
               })}
             >
               STUDIO INFO.
             </NavLink>
             <a
-              href="https://usubgi.cafe24.com/"
+              href="https://www.bikabuka.net/"
               target="_blank"
               rel="noreferrer"
             >
@@ -46,7 +49,9 @@ const Header = () => {
           <S.MenuSideBar>
             <S.ControllBtnWrapper>
               <div onClick={() => dispatch(onRollup())}>+</div>
-              <div>/</div>
+              {'    '}
+              <div> / </div>
+              {'    '}
               <div onClick={() => dispatch(onRollDown())}>-</div>
             </S.ControllBtnWrapper>
             <S.SearchWrapper onSubmit={handleSearch}>

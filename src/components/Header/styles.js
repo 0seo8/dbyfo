@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
   background-color: var(--main-background-color);
-  color: ${(props) => (props.color ? '#000' : '#fff')};
+  //color: ${(props) => (props.color ? '#000' : '#fff')};
   position: relative;
   line-height: 18px;
   width: 100%;
@@ -13,14 +13,14 @@ export const Header = styled.div`
   text-align: start;
   a {
     text-decoration: none;
-    color: ${(props) => (props.color ? '#000' : '#fff')};
+    //color: ${(props) => (props.color ? '#000' : '#fff')};
   }
 `;
 export const HeaderContainer = styled.div`
   background-color: var(--main-background-color);
   left: 0;
   right: 0;
-  padding: 24px calc(var(--base-padding-vertical) + 8px);
+  padding: 10px calc(var(--base-padding-vertical) + 8px);
   top: 0;
   position: fixed;
   display: flex;
@@ -37,10 +37,12 @@ export const Link = styled(NavLink)`
 
 export const LogoLink = styled.h1`
   padding: 15px 0;
+  font-size: 20px;
 `;
 
 export const MenuWrapper = styled.div`
   display: flex;
+  //font-size: 14px;
 `;
 
 export const MenuBar = styled.ul`
@@ -56,7 +58,7 @@ export const MenuBar = styled.ul`
 
 export const MenuSideBar = styled.div`
   display: flex;
-  flex-grow: 1;
+  //flex-grow: 1;
 `;
 
 export const ControllBtnWrapper = styled.div`
@@ -67,6 +69,9 @@ export const ControllBtnWrapper = styled.div`
   max-width: 80px;
   width: 100%;
   cursor: pointer;
+  div {
+    padding-right: 20px;
+  }
 `;
 
 export const SearchWrapper = styled.form`

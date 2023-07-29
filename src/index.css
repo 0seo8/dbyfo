@@ -3,10 +3,15 @@
 body {
   background-color: var(--main-background-color);
   font-family: var(--main-font-family);
+  font-size: var(--main-base-size);
+}
+
+h2 {
+  font-size: var(--main-base-size) !important;
 }
 
 .pages {
-  padding-top: 120px;
+  padding-top: 95px;
 }
 
 .swiper {

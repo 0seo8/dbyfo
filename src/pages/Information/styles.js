@@ -7,8 +7,8 @@ export const ProjectListWrapper = styled.div`
 `;
 
 export const ListWrapper = styled.div`
-  background-color: #fff;
-  margin-bottom: 20px;
+  background-color: var(--studiocard-background-color);
+  margin-bottom: var(--studiocard-card-padding);
   display: flex;
   flex-flow: column;
 
@@ -22,11 +22,15 @@ export const ListWrapper = styled.div`
 `;
 
 export const ListTitle = styled.div`
-  background-color: ${(props) => (props.isActive ? '#fff' : '#a9a9a9')};
+  background-color: ${(props) =>
+    props.isActive
+      ? 'var(--studiocard-background-color)'
+      : 'var(--main-background-color)'};
   text-align: start;
   padding: 20px var(--base-padding-vertical);
-  line-height: 25px;
-  color: ${(props) => (props.isActive ? '#000' : '#fff')};
+  line-height: var(--studiocard-font-height);
+  color: ${(props) =>
+    props.isActive ? 'var(--base-font-color)' : 'var(--white-font-color)'};
 
   div:first-child {
     border-bottom: ${(props) => props.isActive || '2px solid'};
@@ -40,7 +44,7 @@ export const ListTitle = styled.div`
   h2 {
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: var(--main-base-size);
   }
 
   span {

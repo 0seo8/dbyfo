@@ -20,9 +20,10 @@ export const ListWrapper = styled.div`
 `;
 
 export const ListTitle = styled.div`
-  background-color: ${(props) => (props.isActive ? '#fff' : '#a9a9a9')};
+  background-color: ${(props) =>
+    props.isActive ? '#fff' : 'var( --main-background-color)'};
   text-align: start;
-  padding: 20px var(--base-padding-vertical);
+  padding: 10px var(--base-padding-vertical);
   line-height: 25px;
 
   div:first-child {
@@ -31,6 +32,7 @@ export const ListTitle = styled.div`
   div {
     border-left: ${(props) => props.isActive || '2px solid'};
     padding: ${(props) => (props.isActive ? '10px 0' : '10px')};
+    // padding: ${(props) => (props.isActive ? '10px 0' : '10px')};
     border-color: ${(props) => (props.isActive ? 'cyan' : 'inherit')};
   }
 
