@@ -54,6 +54,10 @@ export const MenuBar = styled.ul`
   flex-grow: 3;
 `;
 
+export const DropdownContainer = styled.div`
+  position: relative;
+`;
+
 export const MenuSideBar = styled.div`
   display: flex;
 `;

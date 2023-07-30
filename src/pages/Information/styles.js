@@ -7,8 +7,8 @@ export const ProjectListWrapper = styled.div`
 `;
 
 export const ListWrapper = styled.div`
-  background-color: var(--studiocard-background-color);
-  margin-bottom: var(--studiocard-card-padding);
+  background-color: var(--card-background-color);
+  margin-bottom: var(--base-margin);
   display: flex;
   flex-flow: column;
 
@@ -24,7 +24,7 @@ export const ListWrapper = styled.div`
 export const ListTitle = styled.div`
   background-color: ${(props) =>
     props.isActive
-      ? 'var(--studiocard-background-color)'
+      ? 'var(--card-background-color)'
       : 'var(--main-background-color)'};
   text-align: start;
   padding: 10px var(--base-padding-vertical);

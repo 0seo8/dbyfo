@@ -19,10 +19,12 @@
 
 /*    Studio Section color*/
 
-    --studiocard-background-color: #fff;
     /* 카드 사이사이 여백 */
-    --studiocard-card-padding: 10px;
+    --studiocard-card-padding: 20px;
     /* 폰트 여백*/
     --studiocard-font-height: 25px;
 
+
+    --card-background-color: #fff;
+    --base-margin: 20px;
 }

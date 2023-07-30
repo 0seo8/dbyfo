@@ -25,5 +25,6 @@ module.exports = {
     'react/require-default-props': 'off',
     'import/no-unresolved': 'off',
     'import/no-named-as-default': 'off',
+    'react/prop-types': 'off',
   },
 };
