@@ -35,8 +35,10 @@ const ImageSlider = ({ images }) => {
           <S.ImageSlide
             key={index}
             onClick={handleImageClick}
-            img={imageUrl}
-          ></S.ImageSlide>
+            // img={imageUrl}
+          >
+            <img src={imageUrl} alt={imageUrl} />
+          </S.ImageSlide>
         ))}
       </Swiper>
     </>

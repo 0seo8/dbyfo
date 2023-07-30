@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div``;
 export const ListWrapper = styled.div`
-  //background-color: #fff;
   margin-bottom: 20px;
   display: flex;
   flex-flow: column;
@@ -24,19 +23,17 @@ export const ListTitle = styled.div`
   margin: ${(props) => (props.isActive ? '0 30px' : '0')};
   padding: ${(props) =>
     props.isActive ? '0' : '10px var(--base-padding-vertical)'};
-  //padding: 10px var(--base-padding-vertical);
   line-height: 1;
 
   div {
     border-left: ${(props) => props.isActive || '2px solid'};
-    // padding: ${(props) => (props.isActive ? '10px 0' : '10px')};
-    // padding: ${(props) => (props.isActive ? '10px 0' : '10px')};
-    padding: 20px 10px 0;
+    padding: 20px;
+    padding-bottom: ${(props) => props.isActive && '0'};
     border-color: ${(props) => (props.isActive ? 'cyan' : 'inherit')};
   }
   div:first-child {
     border-bottom: ${(props) => props.isActive || '2px solid'};
-    padding: 0 10px 20px;
+    //padding: 20px 20px 10px;
   }
   h2 {
     margin: 0;
@@ -47,46 +44,55 @@ export const ListTitle = styled.div`
   }
 `;
 
+export const Title = styled.div``;
+
+export const Year = styled.div``;
+
 export const ListContent = styled.div`
   background-color: #fff;
   font-family: 'Jeju Gothic', sans-serif;
   display: flex;
-  padding: 20px 10px;
-  gap: 50px;
+  padding: 20px;
+  gap: 30px;
   margin: 0 30px;
 }
 
   @media (max-width: 1100px) {
     display: flex;
     flex-flow: column;
-    gap: 50px;
+    gap: 30px;
 
   }
 
 // `;
 
 export const SwiperWrapper = styled.div`
-  //aspect-ratio: auto 16 / 9;
+  aspect-ratio: auto 16 / 9;
   min-width: 771px;
-  height: 381px;
   flex-grow: 7;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 `;
 
 export const ListText = styled.div`
   flex-grow: 3;
 `;
 
-export const Content = styled.div`
-  font-size: small;
+export const Content = styled.p`
   line-height: 2;
   word-break: break-word;
+  margin: 0;
 `;
 export const SubContent = styled.div`
   display: flex;
-  gap: 30px;
-  margin-top: 40px;
-  font-size: 12px;
+  justify-content: space-between;
+  margin-top: 20px;
+  div {
+    min-width: 120px;
+  }
+  p {
+    margin-top: 0;
+  }
 `;

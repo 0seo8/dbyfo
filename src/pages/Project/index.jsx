@@ -57,20 +57,40 @@ const Project = () => {
             onClick={() => handleToggleVisible(idx)}
             isActive={visibleIndexes.includes(idx)}
           >
-            <div>
-              <h2>{item.title}</h2>
-            </div>
-            <div>
+            <S.Title>
+              <h2>
+                {item.title} / {item.sub_title}
+              </h2>
+            </S.Title>
+            <S.Year>
               <span>{item.year}</span>
-            </div>
+            </S.Year>
           </S.ListTitle>
           {visibleIndexes.includes(idx) && (
             <S.ListContent>
               <S.ListText>
-                <S.Content>{item.content}</S.Content>
+                {item.content.map((item) => (
+                  <>
+                    <S.Content>{item}</S.Content>
+                  </>
+                ))}
                 <S.SubContent>
-                  {item.sub.designer && <p>Designer: {item.sub.designer}</p>}
-                  {item.sub.client && <p>Client: {item.sub.client}</p>}
+                  <div>
+                    <p>Designer</p>
+                    {item.sub.designer.map((item, idx) => (
+                      <p key={idx}>{item}</p>
+                    ))}
+                  </div>
+                  <div>
+                    <p>Client</p>
+                    {item.sub.client.map((item, idx) => (
+                      <p key={idx}>{item}</p>
+                    ))}
+                    {item.sub.Manufacturer && <p>Manufacturer</p>}
+                    {item.sub.Manufacturer?.map((item, idx) => (
+                      <p key={idx}>{item}</p>
+                    ))}
+                  </div>
                 </S.SubContent>
               </S.ListText>
               <S.SwiperWrapper>
