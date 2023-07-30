@@ -73,22 +73,24 @@ const Header = () => {
               BIKABUKA
             </a>
           </S.MenuBar>
-          <S.MenuSideBar>
-            <S.ControllBtnWrapper>
-              <S.Btn onClick={() => dispatch(onRollup())}>
-                <AiOutlinePlus />
-              </S.Btn>
-              {'    '}
-              <span> / </span>
-              {'    '}
-              <S.Btn onClick={() => dispatch(onRollDown())}>
-                <BiMinus />
-              </S.Btn>
-            </S.ControllBtnWrapper>
-            <S.SearchWrapper onSubmit={handleSearch}>
-              <input name="search" placeholder="Search" />
-            </S.SearchWrapper>
-          </S.MenuSideBar>
+          {pathname === '/' && (
+            <S.MenuSideBar>
+              <S.ControllBtnWrapper>
+                <S.Btn onClick={() => dispatch(onRollup())}>
+                  <AiOutlinePlus />
+                </S.Btn>
+                {'    '}
+                <span> / </span>
+                {'    '}
+                <S.Btn onClick={() => dispatch(onRollDown())}>
+                  <BiMinus />
+                </S.Btn>
+              </S.ControllBtnWrapper>
+              <S.SearchWrapper onSubmit={handleSearch}>
+                <input name="search" placeholder="Search" />
+              </S.SearchWrapper>
+            </S.MenuSideBar>
+          )}
         </S.MenuWrapper>
       </S.HeaderContainer>
     </S.Header>
