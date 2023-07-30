@@ -38,10 +38,17 @@ const Project = () => {
     // 검색어가 변경될 때마다 데이터를 순회하여 검색된 아이템들의 인덱스를 찾아냄
     if (keyword === '') return;
     const filteredIndexes = data.reduce((acc, item, idx) => {
-      const { title, content } = item;
+      const { title, sub_title, content, year } = item;
+
+      // content 배열의 각 요소를 문자열로 합침
+      const contentString = content.join(' ');
+
+      // title, content, year를 검색어와 비교
       if (
         title.toLowerCase().includes(keyword.toLowerCase()) ||
-        content.toLowerCase().includes(keyword.toLowerCase())
+        sub_title.toLowerCase().includes(keyword.toLowerCase()) ||
+        contentString.toLowerCase().includes(keyword.toLowerCase()) ||
+        year.includes(keyword) // year가 문자열이므로 includes로 비교
       ) {
         acc.push(idx);
       }
