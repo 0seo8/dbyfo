@@ -50,10 +50,9 @@ export const ListTitle = styled.div`
 export const ListContent = styled.div`
   background-color: #fff;
   font-family: 'Jeju Gothic', sans-serif;
-  display: grid;
-  padding: 0 var(--base-padding-vertical) 30px;
-  gap: 120px;
-  align-items: center; 
+  display: flex;
+  padding: 20px 10px;
+  gap: 50px;
   margin: 0 30px;
 }
 
@@ -64,34 +63,26 @@ export const ListContent = styled.div`
 
   }
 
-  //@media (max-width: 650px) {
-  //  display: flex;
-  //  flex-flow: column;
-  //  gap: 50px;
-  //  img {
-  //    min-width: 400px;
-  //  }
-  //}
 // `;
 
 export const SwiperWrapper = styled.div`
-  aspect-ratio: auto 4 / 3;
-  min-width: 600px;
-  max-height: 600px;
-  //flex-grow: 1;
-  //
-  //@media (max-width: 1100px) {
-  //  min-width: auto;
-  //  max-height: 400px;
-  //}
+  //aspect-ratio: auto 16 / 9;
+  min-width: 771px;
+  height: 381px;
+  flex-grow: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const ListText = styled.div``;
+export const ListText = styled.div`
+  flex-grow: 3;
+`;
 
 export const Content = styled.div`
   font-size: small;
   line-height: 2;
-  word-break: keep-all;
+  word-break: break-word;
 `;
 export const SubContent = styled.div`
   display: flex;
