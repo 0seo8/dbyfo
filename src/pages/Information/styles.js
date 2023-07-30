@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  margin: 0 30px;
+`;
 
 export const ProjectListWrapper = styled.div`
-  width: 100%;
+  //width: 100%;
 `;
 
 export const ListWrapper = styled.div`
   background-color: var(--card-background-color);
-  margin-bottom: var(--base-margin);
+  margin: ${(props) => (props.isActive ? '0 30px 20px' : '0 0 20px')};
   display: flex;
   flex-flow: column;
 
@@ -27,23 +29,23 @@ export const ListTitle = styled.div`
       ? 'var(--card-background-color)'
       : 'var(--main-background-color)'};
   text-align: start;
-  padding: 10px var(--base-padding-vertical);
+  margin: ${(props) => (props.isActive ? '0 30px' : '0')};
+  padding: ${(props) =>
+    props.isActive ? '0' : '10px var(--base-padding-vertical)'};
   line-height: var(--studiocard-font-height);
-  color: ${(props) =>
-    props.isActive ? 'var(--base-font-color)' : 'var(--white-font-color)'};
 
+  div {
+    border-left: ${(props) => props.isActive || '2px solid'};
+    padding: ${(props) => (props.isActive ? '20px 0' : '20px')};
+    padding-bottom: ${(props) => props.isActive && '0'};
+    border-color: ${(props) => (props.isActive ? 'cyan' : 'inherit')};
+  }
   div:first-child {
     border-bottom: ${(props) => props.isActive || '2px solid'};
   }
-  div {
-    border-left: ${(props) => props.isActive || '2px solid'};
-    padding: ${(props) => (props.isActive ? '10px 0' : '10px')};
-    border-color: ${(props) => (props.isActive ? 'cyan' : 'inherit')};
-  }
-
   h2 {
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-size: var(--main-base-size);
   }
 
@@ -53,13 +55,13 @@ export const ListTitle = styled.div`
 `;
 
 export const InformationCotnetWrapper = styled.div`
-  padding: 0 var(--base-padding-vertical) 30px;
+  margin: 0 30px;
 `;
 
 export const ListContent = styled.div`
   font-family: 'Jeju Gothic', sans-serif;
   display: flex;
-  padding: 0 30px 30px;
+  padding: 0 30px;
   gap: 120px;
   align-items: center;
   img {

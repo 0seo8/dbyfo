@@ -30,32 +30,30 @@ const Index = () => {
   };
 
   return (
-    <S.Container>
-      <S.ProjectListWrapper>
-        {data.map((item, idx) => (
-          <S.ListWrapper key={idx} isActive={visibleIndexes.includes(idx)}>
-            <S.ListTitle
-              onClick={() => handleToggleVisible(idx)}
-              isActive={visibleIndexes.includes(idx)}
-            >
+    <S.ProjectListWrapper>
+      {data.map((item, idx) => (
+        <S.ListWrapper key={idx} isActive={visibleIndexes.includes(idx)}>
+          <S.ListTitle
+            onClick={() => handleToggleVisible(idx)}
+            isActive={visibleIndexes.includes(idx)}
+          >
+            <div>
+              <h2>{item.title}</h2>
+            </div>
+            {visibleIndexes.includes(idx) || (
               <div>
-                <h2>{item.title}</h2>
+                <span>{item.desc}</span>
               </div>
-              {visibleIndexes.includes(idx) || (
-                <div>
-                  <span>{item.desc}</span>
-                </div>
-              )}
-            </S.ListTitle>
-            {visibleIndexes.includes(idx) && (
-              <S.InformationCotnetWrapper>
-                {renderComponent(item.path)}
-              </S.InformationCotnetWrapper>
             )}
-          </S.ListWrapper>
-        ))}
-      </S.ProjectListWrapper>
-    </S.Container>
+          </S.ListTitle>
+          {visibleIndexes.includes(idx) && (
+            <S.InformationCotnetWrapper>
+              {renderComponent(item.path)}
+            </S.InformationCotnetWrapper>
+          )}
+        </S.ListWrapper>
+      ))}
+    </S.ProjectListWrapper>
   );
 };
 

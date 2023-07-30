@@ -6,4 +6,5 @@ export const Content = styled.h3`
   font-weight: 700;
   font-size: 12px;
   color: #333;
+  margin: 20px 0;
 `;

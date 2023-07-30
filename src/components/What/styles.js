@@ -5,18 +5,21 @@ export const Content = styled.h3`
   font-weight: 700;
   font-size: 12px;
   color: #333;
+  padding: 0;
+  margin: 20px 0;
+`;
+
+export const Border = styled.div`
+  border-top: 2px solid #333;
 `;
 
 export const Section = styled.div`
-  border-top: 2px solid #333;
-  margin-top: 30px;
-  padding-top: 30px;
+  margin: 20px 0;
   font-size: 14px;
-  ul {
+  li {
     list-style: none;
-    padding: 0;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.8;
   }
   strong {
     padding-right: 6px;

@@ -16,7 +16,9 @@ export const ListWrapper = styled.div`
 
 export const ListTitle = styled.div`
   background-color: ${(props) =>
-    props.isActive ? '#fff' : 'var( --main-background-color)'};
+    props.isActive
+      ? 'var(--card-background-color)'
+      : 'var( --main-background-color)'};
   text-align: start;
   margin: ${(props) => (props.isActive ? '0 30px' : '0')};
   padding: ${(props) =>
@@ -31,7 +33,6 @@ export const ListTitle = styled.div`
   }
   div:first-child {
     border-bottom: ${(props) => props.isActive || '2px solid'};
-    //padding: 20px 20px 10px;
   }
   h2 {
     margin: 0;

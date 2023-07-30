@@ -6,10 +6,16 @@ export const Content = styled.h3`
   font-weight: 700;
   font-size: 12px;
   color: #333;
+  padding: 0;
+  margin: 20px 0;
 `;
 export const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+`;
+
+export const Border = styled.div`
+  border-top: 2px solid #333;
 `;
 
 export const Card = styled.ul`
@@ -17,8 +23,6 @@ export const Card = styled.ul`
   line-height: 1.5;
   list-style: none;
   padding: 0;
-  margin: 20px 0 0;
-  min-width: 300px;
   li {
     list-style: none;
     padding: 0;
@@ -27,7 +31,6 @@ export const Card = styled.ul`
 `;
 
 export const NameAndCareer = styled.li`
-  border-top: 2px solid #333;
   font-weight: 600;
   font-size: 14px;
   line-height: 3;

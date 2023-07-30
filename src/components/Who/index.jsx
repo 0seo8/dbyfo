@@ -14,7 +14,7 @@ const Who = () => {
         wide range of problem solving design projects from creating new business
         categories to designing consumer products.
       </S.Content>
-
+      <S.Border></S.Border>
       <S.CardWrapper>
         {data.map((item) => (
           <S.Card key={item['name&job']}>
