@@ -30,6 +30,53 @@
     ]
   },
   {
+    "tag": "product",
+    "title": "Exercise Equipment",
+    "sub_title": "Loop  Stick",
+    "year": "FIET / 2023",
+    "content": ["Loop Stick은 운동 시 올바른 자세를 잡게 해주어 정확한 운동 동작을 지원해주고 이를 통한 신체 밸런스와 관절 가동성 개선해주는 운동기구이다. 제품의 트랙 형상을 통해 안정된 그립감을 제공해주어 사용자에게 정확한 운동 동작을 지원해주고, 사용자의 신체 밸런스를 개선해주어 올바른 자세로 운동 할 수 있도록 지원한다. 센터의 그래픽은 사용자가 제품의 중심의 위치를 확인할 수 있도록 도와준다. 이를 통해 운동 시 사용자의 손의 위치가 잘못되어있거나, 운동 중 자세가 무너지는 것을 알 수 있다. 나무 재질은 사용자로 하여금 기존 운동 장비에서 느낄 수 없었던 따뜻함을 느낄 수 있게 해준다. 이는 운동이 끝난 후 우악스러운 모습으로 방 안에 놓이는 운동기구의 모습이 아닌, 집 안에 잘 어울리는 하나의 아이템으로 보일 수 있게 해준다. 상단의 고리를 통해 고리에 걸거나, 하단의 캡을 통해 벽에 기대두어 사용자의 주변에서 언제든 쉽게 사용할 수 있도록 도와준다."
+    ],
+    "sub": {
+      "designer": ["Euiseok Kim", " SeungCheol Lee", "Junku Jung"],
+      "client": ["FIET"],
+      "Manufacturer": ["HS Grobal", "Bogang wood"]
+    },
+    "img": [
+      "assets/loopstick/1.jpeg",
+      "assets/loopstick/2.jpeg",
+      "assets/loopstick/3.jpeg",
+      "assets/loopstick/4.jpeg",
+      "assets/loopstick/5.jpeg",
+      "assets/loopstick/6.jpeg",
+      "assets/loopstick/7.jpeg",
+      "assets/loopstick/8.jpeg",
+      "assets/loopstick/9.jpeg",
+      "assets/loopstick/10.jpeg",
+      "assets/loopstick/11.jpeg",
+      "assets/loopstick/12.jpeg",
+      "assets/loopstick/13.jpeg"
+    ]
+  },
+  {
+    "tag": "product",
+    "title": "Exercise Equipment",
+    "sub_title": "Loop AI bar",
+    "year": "FIET / 2023",
+    "content": ["Loop AI bar 는 운동 시 올바른 자세를 잡게 해주어 정확한 운동 동작을 지원해주고 이를 통한 신체 밸런스와 관절 가동성 개선해주는 운동기구이다. 제품의 트랙 형상을 통해 안정된 그립감을 제공해주어 사용자에게 정확한 운동 동작을 지원해주고, 사용자의 신체 밸런스를 개선해주어 올바른 자세로 운동 할 수 있도록 지원한다. 센터의 그래픽은 사용자가 제품의 중심의 위치를 확인할 수 있도록 도와준다. 이를 통해 운동 시 사용자의 손의 위치가 잘못되어있거나, 운동 중 자세가 무너지는 것을 알 수 있다. 나무 재질은 사용자로 하여금 기존 운동 장비에서 느낄 수 없었던 따뜻함을 느낄 수 있게 해준다. 이는 운동이 끝난 후 우악스러운 모습으로 방 안에 놓이는 운동기구의 모습이 아닌, 집 안에 잘 어울리는 하나의 아이템으로 보일 수 있게 해준다. 상단의 고리를 통해 고리에 걸거나, 하단의 캡을 통해 벽에 기대두어 사용자의 주변에서 언제든 쉽게 사용할 수 있도록 도와준다."
+    ],
+    "sub": {
+      "designer": ["Euiseok Kim", " SeungCheol Lee", "Junku Jung"],
+      "client": ["FIET"],
+      "Manufacturer": ["HS Grobal", "Bogang wood"]
+    },
+    "img": [
+
+      "assets/loopaibar/1.jpeg",
+      "assets/loopaibar/2.jpeg",
+      "assets/loopaibar/3.jpeg"
+    ]
+  },
+  {
     "tag": "package",
     "title": "Hardware System Package",
     "sub_title": "Loop Training series",
@@ -73,10 +120,131 @@
       "Manufacturer": ["soluM"]
     },
     "img": [
-      "https://cdn.imweb.me/thumbnail/20230720/807575f8d46f6.jpg",
-      "https://cdn.imweb.me/thumbnail/20230720/2abf5929eb24b.jpg",
-      "https://cdn.imweb.me/thumbnail/20230720/ecbfd7b6c440b.jpg",
-      "https://cdn.imweb.me/thumbnail/20230720/a50ef8c737d89.jpg"
+      "assets/loopcore/1.jpeg",
+      "assets/loopcore/2.jpeg",
+      "assets/loopcore/3.jpeg",
+      "assets/loopcore/4.jpeg",
+      "assets/loopcore/5.jpeg",
+      "assets/loopcore/6.jpeg",
+      "assets/loopcore/7.jpeg",
+      "assets/loopcore/8.jpeg",
+      "assets/loopcore/9.jpeg",
+      "assets/loopcore/10.jpeg",
+      "assets/loopcore/11.jpeg",
+      "assets/loopcore/12.jpeg",
+      "assets/loopcore/13.jpeg",
+      "assets/loopcore/14.jpeg"
+    ]
+  } ,
+  {
+    "tag": "service",
+    "title": "Flagship store Interior",
+    "sub_title": "Terrace Yongsan & Garden Yeoksam",
+    "year": "Mom's touch / 2021",
+    "content": ["F&amp;B franchise Mom's touch와 협업한 플래그쉽 스토어로 디바이포의 첫 번째 공간 기획이다. 브랜드 고객 접점에서 다양한 시도가 필요했던 고객사는 Mom's touch LAB이라는 실험적인 공간을 역삼 테헤란로와 신용산 한강대로에 공간을 마련했으며 디바이포는 고객사의 니즈에 맞는 공간 기획과 디자인을 진행하였다.",
+      "역삼점은 번잡한 도심임에도 주위에 가로수나 조경수가 많고 Sunken형 입지로 가시성이 낮은 상업 공간이다. 이런 특성을 활용하여 주변 직장인의 아침 시간 선점을 위한 혼밥을 위한 도심 속 정원으로 기획하였으며 주변 조경과 도시 뷰를 최대한 활용하기 위해 대형 창문과 2방향의 입구를 제안했으며 소재와 컬러를 제한하여 바깥의 풍경이 가장 아름답게 매장 내에서 보인다. 내부가 채워지는 게 아닌 외부를 끌어들이는 공간은 이후 다양한 브랜드와의 협업을 위한 공간으로 활용되고 있다.",
+      "테라스 용산은 신용산역 4번 출구 앞의 통행량이 많은 대로변으로 아모레 퍼시픽 신사옥과 마주 보고 있다. 지역 특성을 반영하여 저녁 시간의 직장인을 타깃으로 시간대별로 바뀌는 메뉴에 맞게 조명의 색온도 변화를 주었으며 내외부의 보행자들과의 시선을 가려주기 위해 브랜드를 표현한 친환경 종이 조형물을 활용하였으며, 대형테이블을 통해 프랜차이즈보다는 로컬의 카페처럼 따뜻한 공간으로 디자인하였다."
+    ],
+    "sub": {
+      "designer": ["Euiseok Kim", " SeungCheol Lee", "Junku Jung"],
+      "client": ["Mom's touch"]
+    },
+    "img": [
+      "assets/mamstouch/1.jpeg",
+      "assets/mamstouch/2.jpeg",
+      "assets/mamstouch/3.jpeg",
+      "assets/mamstouch/4.jpeg",
+      "assets/mamstouch/5.jpeg",
+      "assets/mamstouch/6.jpeg",
+      "assets/mamstouch/7.jpeg",
+      "assets/mamstouch/8.jpeg"
+    ]
+  } ,
+  {
+    "tag": "product",
+    "title": "Smart Wear",
+    "sub_title": "Loop EMS & RT Wear",
+    "year": "FIET / 2022",
+    "content": ["Loop EMS & RT Wear는 FIET가 개발한 AI 기술을 활용한 맞춤형 운동 서비스를 위한 Smart Wear이다. 사용자는 운동을 시작하기 전 자석이 내장된 작은 기기를 옷에 부착하기만 하면 거추장스러운 운동 장비를 사용하기 위한 추가 공간이나 연결을 위한 추가적인 케이블 정리 없이 스마트한 옷 한 벌만으로 스스로 과학적인 운동이 가능하다. 웨어를 착용 이후 사용자가 개인화된 운동 콘텐츠를 따라하면, 웨어에 부착된 기기에 내장된 센서(자이로, 가속도)가 몸의 움직임과 근육의 기능을 이해하고 측정하여 측정된 데이터를 통해 운동 성과에 대해 객관적인 평가를 할 수 있도록 해준다. 센서기기는 운동 간섭이 없고 움직임을 측정하기에 적합한 위치인 가슴 상부와 허벅지에 탈 부착 되며 관절 부위에는 운동 효과 증가를 위한 Compression 기능을 가진 특별한 소재가 적용되어 전자 장비 없이도 운동 효과를 증대시켜준다. 또한 옷의 안쪽에 덧대어진 은사(Silver thread)를 통해 사용자는 깊은 근육 자극을 통해 사용자의 운동 효과를 극대화해 주는 EMS(electrical muscle stimulation) 주파를 느낄 수 있다.",
+      "몸의 실루엣이 잘 드러나는 Midnight Blue 컬러, 각 동작과 움직임을 더 잘 보여주기 위한 상 하의의 길이를 적용하였으며, 부위별로 적용된 다양한 소재들, 몸에 직접 닿는 부분, 컴프레션 부위, 은사 부위 등의 기능별로 다른 소재들을 신체 구조와 운동 수행에 적합한 절개선과 이질감 없는 봉제 기술을 활용하여 디자인되었다."
+    ],
+    "sub": {
+      "designer": ["Euiseok Kim", " SeungCheol Lee", "Junku Jung"],
+      "client": ["FIET"],
+      "Manufacturer": ["Needle & Thread"]
+    },
+    "img": [
+      "assets/loopwear/1.jpeg",
+      "assets/loopwear/2.jpeg",
+      "assets/loopwear/3.jpeg",
+      "assets/loopwear/4.jpeg",
+      "assets/loopwear/5.jpeg",
+      "assets/loopwear/6.jpeg",
+      "assets/loopwear/7.jpeg",
+      "assets/loopwear/8.jpeg",
+      "assets/loopwear/9.jpeg",
+      "assets/loopwear/10.jpeg",
+      "assets/loopwear/11.jpeg",
+      "assets/loopwear/12.jpeg",
+      "assets/loopwear/13.jpeg",
+      "assets/loopwear/14.jpeg",
+      "assets/loopwear/15.jpeg",
+      "assets/loopwear/16.jpeg"
+    ]
+  },  {
+    "tag": "product",
+    "title": "iPhone Case",
+    "sub_title": "Canvas",
+    "year": "DBYFO / 2021",
+    "content": [
+  "DBYFO Studio가 디자인하고 생산한 만든 4가지 컬러의 iPhone 13 Pro 케이스이다. 부드럽고 안전한 TPU 소재 감성에 맞는 편안한 표면처리와 사각형의 심플한 형태의 케이스로 모서리 안쪽에 보이지 않는 에어 범퍼 처리가 되어 충격을 반감시켜준다. 단색의 컬러로 제작되어 스티커 등을 통해 취향에 맞게 꾸밀 수 있다."
+    ],
+    "sub": {
+      "designer": ["Euiseok Kim", " SeungCheol Lee", "Junku Jung"],
+      "client": null
+    },
+    "img": [
+      "assets/canvus/1.jpeg",
+      "assets/canvus/2.jpeg",
+      "assets/canvus/3.jpeg",
+      "assets/canvus/4.jpeg",
+      "assets/canvus/5.jpeg",
+      "assets/canvus/6.jpeg",
+      "assets/canvus/7.jpeg",
+      "assets/canvus/8.jpeg",
+      "assets/canvus/9.jpeg",
+      "assets/canvus/10.jpeg"
+    ]
+  },
+  {
+    "tag": "service",
+    "title": "Interactive exhibition ",
+    "sub_title": "\"Stage 4\" - Tangible Music",
+    "year": "Hi-Lite records x DBYFO  / 2021",
+    "content": [
+      "힙합 레이블 Hi-lite records와의 협업으로 서울 디자인 페스티벌에 전시한 'Stage 4, tangible music' 이다. 손으로 만질 수 있는 새로운 유형의 음악 경험 매체. 사람들은 수많은 음악과 영상을 한순간에 소비하고 마는 시대에 살고 있다. 우리에겐 시간이 흘러도 계속 소유하고, 기억하고, 더 공감각적으로 음악 콘텐츠를 경험할 수 있는 매체가 필요하다. 해당 전시 내 하이라이트 레코즈 ( Hi-lite records )와 DBYFO Studio는 그동안 우리가 가볍게 소비해 왔던 무형의 음악을 공감각적으로 경험할 수 있는 새로운 매체 “ Stage 4”를 제안하였다.",
+      "레이블 소속의 아티스트들에게 맞는 오브제를 선정하고 각 오브제에 NFC를 내장시켜 음원과 매칭하여 전시는 무형의 Intangible 한 음원을 유형의 Tangible 한 굿즈로 바꿔 아티스트들의 음악을 눈으로 보고, 손으로 만지고 귀로 들어보는 경험을 제공한다."
+    ],
+    "sub": {
+      "designer": ["Euiseok Kim", " SeungCheol Lee", "Junku Jung"],
+      "client": ["Hi-Lite records"]
+    },
+    "img": [
+      "assets/hilight/1.jpeg",
+      "assets/hilight/2.jpeg",
+      "assets/hilight/3.jpeg",
+      "assets/hilight/4.jpeg",
+      "assets/hilight/5.jpeg",
+      "assets/hilight/6.jpeg",
+      "assets/hilight/7.jpeg",
+      "assets/hilight/8.jpeg",
+      "assets/hilight/9.jpeg",
+      "assets/hilight/10.jpeg",
+      "assets/hilight/11.jpeg",
+      "assets/hilight/12.jpeg",
+      "assets/hilight/13.jpeg",
+      "assets/hilight/14.jpeg",
+      "assets/hilight/15.jpeg"
     ]
   }
 ]

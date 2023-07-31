@@ -93,8 +93,8 @@ const Index = ({ item, idx }) => {
                   ))}
                 </div>
                 <div>
-                  <p>Client</p>
-                  {item.sub.client.map((item, idx) => (
+                  {item.sub.client && <p>Client</p>}
+                  {item.sub.client?.map((item, idx) => (
                     <p key={idx}>{item}</p>
                   ))}
                   {item.sub.Manufacturer && <p>Manufacturer</p>}
