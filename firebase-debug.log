@@ -1,0 +1,423 @@
+[debug] [2023-07-30T22:52:14.131Z] ----------------------------------------------------------------------
+[debug] [2023-07-30T22:52:14.132Z] Command:       /opt/homebrew/Cellar/node/19.5.0/bin/node /Users/rohyeongseo/WebstormProjects/dbyfo/node_modules/.bin/firebase emulators:start
+[debug] [2023-07-30T22:52:14.132Z] CLI Version:   12.4.6
+[debug] [2023-07-30T22:52:14.132Z] Platform:      darwin
+[debug] [2023-07-30T22:52:14.133Z] Node Version:  v19.5.0
+[debug] [2023-07-30T22:52:14.133Z] Time:          Mon Jul 31 2023 07:52:14 GMT+0900 (Korean Standard Time)
+[debug] [2023-07-30T22:52:14.133Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-30T22:52:14.181Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-30T22:52:14.181Z] > authorizing via signed-in user (00seo23@gmail.com)
+[debug] [2023-07-30T22:52:14.442Z] openjdk version "17.0.5" 2022-10-18 LTS
+
+[debug] [2023-07-30T22:52:14.442Z] OpenJDK Runtime Environment Zulu17.38+21-CA (build 17.0.5+8-LTS)
+OpenJDK 64-Bit Server VM Zulu17.38+21-CA (build 17.0.5+8-LTS, mixed mode, sharing)
+
+[debug] [2023-07-30T22:52:14.444Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: functions, database {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, database"}}
+[debug] [2023-07-30T22:52:15.009Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-07-30T22:52:15.009Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-07-30T22:52:15.009Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-07-30T22:52:15.012Z] [hub] writing locator at /var/folders/1k/tm3t3w4n63n8czbqxwz1tn680000gn/T/hub-dbyfo-a0eae.json
+[debug] [2023-07-30T22:52:15.285Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-07-30T22:52:15.285Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-07-30T22:52:15.285Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-07-30T22:52:15.287Z] defaultcredentials: writing to file /Users/rohyeongseo/.config/firebase/00seo23_gmail_com_application_default_credentials.json
+[debug] [2023-07-30T22:52:15.288Z] Setting GAC to /Users/rohyeongseo/.config/firebase/00seo23_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/rohyeongseo/.config/firebase/00seo23_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-30T22:52:15.288Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dbyfo-a0eae/adminSdkConfig [none]
+[debug] [2023-07-30T22:52:15.701Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dbyfo-a0eae/adminSdkConfig 200
+[debug] [2023-07-30T22:52:15.702Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dbyfo-a0eae/adminSdkConfig {"projectId":"dbyfo-a0eae","databaseURL":"https://dbyfo-a0eae-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"dbyfo-a0eae.appspot.com"}
+[debug] [2023-07-30T22:52:15.715Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dbyfo-a0eae [none]
+[debug] [2023-07-30T22:52:15.981Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dbyfo-a0eae 200
+[debug] [2023-07-30T22:52:15.981Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dbyfo-a0eae {"projectId":"dbyfo-a0eae","projectNumber":"314127627279","displayName":"dbyfo","name":"projects/dbyfo-a0eae","resources":{"hostingSite":"dbyfo-a0eae","realtimeDatabaseInstance":"dbyfo-a0eae-default-rtdb"},"state":"ACTIVE","etag":"1_c04faa6c-d8fa-4c79-bda9-bc369fee8786"}
+[debug] [2023-07-30T22:52:15.982Z] database rules config:  [{"instance":"dbyfo-a0eae-default-rtdb","rules":"/Users/rohyeongseo/WebstormProjects/dbyfo/database.rules.json"}]
+[info] i  database: downloading firebase-database-emulator-v4.11.2.jar... {"metadata":{"emulator":{"name":"database"},"message":"downloading firebase-database-emulator-v4.11.2.jar..."}}
+[debug] [2023-07-30T22:52:15.985Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.2.jar 
+[debug] [2023-07-30T22:52:16.258Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.2.jar 200
+[debug] [2023-07-30T22:52:16.259Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.2.jar [stream]
+[debug] [2023-07-30T22:52:18.474Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2023-07-30T22:52:18.474Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-07-30T22:52:18.474Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2023-07-30T22:52:18.474Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/Users/rohyeongseo/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar","--host","127.0.0.1","--port",9000,"--single_project_mode","Warning","--functions_emulator_host","127.0.0.1","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/Users/rohyeongseo/.cache/firebase/emulators/firebase-database-emulator-v4.11.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",9000,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"127.0.0.1\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2023-07-30T22:52:19.190Z] 07:52:19.189 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"07:52:19.189 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2023-07-30T22:52:19.286Z] 07:52:19.286 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"07:52:19.286 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000\n"}}
+[info] i  ui: downloading ui-v1.11.7.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.7.zip..."}}
+[debug] [2023-07-30T22:52:19.489Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 
+[debug] [2023-07-30T22:52:19.641Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 200
+[debug] [2023-07-30T22:52:19.641Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip [stream]
+[debug] [2023-07-30T22:52:19.729Z] Data is 3064105
+[debug] [2023-07-30T22:52:19.729Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-30T22:52:19.730Z] [unzip] Processing entry: client/
+[debug] [2023-07-30T22:52:19.730Z] [unzip] mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/
+[debug] [2023-07-30T22:52:19.730Z] [unzip] Entry: client/favicon.ico (compressed_size=2497 bytes, uncompressed_size=7406 bytes)
+[debug] [2023-07-30T22:52:19.730Z] [unzip] Processing entry: client/favicon.ico
+[debug] [2023-07-30T22:52:19.730Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.730Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/favicon.ico
+[debug] [2023-07-30T22:52:19.732Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=7231 bytes, uncompressed_size=7367 bytes)
+[debug] [2023-07-30T22:52:19.732Z] [unzip] Processing entry: client/apple-touch-icon.png
+[debug] [2023-07-30T22:52:19.732Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.733Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/apple-touch-icon.png
+[debug] [2023-07-30T22:52:19.733Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=16987 bytes, uncompressed_size=18186 bytes)
+[debug] [2023-07-30T22:52:19.733Z] [unzip] Processing entry: client/android-chrome-512x512.png
+[debug] [2023-07-30T22:52:19.733Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.733Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/android-chrome-512x512.png
+[debug] [2023-07-30T22:52:19.734Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-30T22:52:19.734Z] [unzip] Processing entry: client/assets/
+[debug] [2023-07-30T22:52:19.734Z] [unzip] mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/
+[debug] [2023-07-30T22:52:19.734Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-30T22:52:19.734Z] [unzip] Processing entry: client/assets/extensions/
+[debug] [2023-07-30T22:52:19.734Z] [unzip] mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/extensions/
+[debug] [2023-07-30T22:52:19.734Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2023-07-30T22:52:19.734Z] [unzip] Processing entry: client/assets/extensions/default-extension.png
+[debug] [2023-07-30T22:52:19.734Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/extensions
+[debug] [2023-07-30T22:52:19.734Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/extensions/default-extension.png
+[debug] [2023-07-30T22:52:19.735Z] [unzip] Entry: client/assets/index.58ca09f7.css (compressed_size=37601 bytes, uncompressed_size=321252 bytes)
+[debug] [2023-07-30T22:52:19.735Z] [unzip] Processing entry: client/assets/index.58ca09f7.css
+[debug] [2023-07-30T22:52:19.735Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets
+[debug] [2023-07-30T22:52:19.735Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/index.58ca09f7.css
+[debug] [2023-07-30T22:52:19.736Z] [unzip] Entry: client/assets/index.c2583d42.js (compressed_size=526232 bytes, uncompressed_size=1860152 bytes)
+[debug] [2023-07-30T22:52:19.736Z] [unzip] Processing entry: client/assets/index.c2583d42.js
+[debug] [2023-07-30T22:52:19.736Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets
+[debug] [2023-07-30T22:52:19.736Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/index.c2583d42.js
+[debug] [2023-07-30T22:52:19.744Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-30T22:52:19.744Z] [unzip] Processing entry: client/assets/provider-icons/
+[debug] [2023-07-30T22:52:19.744Z] [unzip] mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/
+[debug] [2023-07-30T22:52:19.744Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2023-07-30T22:52:19.744Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_oidc.svg
+[debug] [2023-07-30T22:52:19.744Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.744Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_oidc.svg
+[debug] [2023-07-30T22:52:19.745Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2023-07-30T22:52:19.745Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_yahoo.svg
+[debug] [2023-07-30T22:52:19.745Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.745Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_yahoo.svg
+[debug] [2023-07-30T22:52:19.745Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2023-07-30T22:52:19.745Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_phone.svg
+[debug] [2023-07-30T22:52:19.745Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.745Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_phone.svg
+[debug] [2023-07-30T22:52:19.745Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2023-07-30T22:52:19.745Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_saml.svg
+[debug] [2023-07-30T22:52:19.745Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.746Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_saml.svg
+[debug] [2023-07-30T22:52:19.746Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2023-07-30T22:52:19.746Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_mslive.svg
+[debug] [2023-07-30T22:52:19.746Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.746Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_mslive.svg
+[debug] [2023-07-30T22:52:19.746Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2023-07-30T22:52:19.746Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_facebook.svg
+[debug] [2023-07-30T22:52:19.746Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.746Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_facebook.svg
+[debug] [2023-07-30T22:52:19.747Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2023-07-30T22:52:19.747Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_play_games.svg
+[debug] [2023-07-30T22:52:19.747Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.747Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_play_games.svg
+[debug] [2023-07-30T22:52:19.747Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2023-07-30T22:52:19.747Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_github.svg
+[debug] [2023-07-30T22:52:19.747Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.747Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_github.svg
+[debug] [2023-07-30T22:52:19.747Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2023-07-30T22:52:19.747Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_apple.svg
+[debug] [2023-07-30T22:52:19.747Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.747Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_apple.svg
+[debug] [2023-07-30T22:52:19.748Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2023-07-30T22:52:19.748Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_google.svg
+[debug] [2023-07-30T22:52:19.748Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.748Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_google.svg
+[debug] [2023-07-30T22:52:19.748Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2023-07-30T22:52:19.748Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_email.svg
+[debug] [2023-07-30T22:52:19.748Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.748Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_email.svg
+[debug] [2023-07-30T22:52:19.748Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2023-07-30T22:52:19.748Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_twitter.svg
+[debug] [2023-07-30T22:52:19.748Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.748Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_twitter.svg
+[debug] [2023-07-30T22:52:19.749Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2023-07-30T22:52:19.749Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_game_center.svg
+[debug] [2023-07-30T22:52:19.749Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons
+[debug] [2023-07-30T22:52:19.749Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/provider-icons/auth_service_game_center.svg
+[debug] [2023-07-30T22:52:19.749Z] [unzip] Entry: client/assets/index.c2583d42.js.map (compressed_size=1778557 bytes, uncompressed_size=7961927 bytes)
+[debug] [2023-07-30T22:52:19.749Z] [unzip] Processing entry: client/assets/index.c2583d42.js.map
+[debug] [2023-07-30T22:52:19.749Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets
+[debug] [2023-07-30T22:52:19.749Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/index.c2583d42.js.map
+[debug] [2023-07-30T22:52:19.774Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-30T22:52:19.774Z] [unzip] Processing entry: client/assets/img/
+[debug] [2023-07-30T22:52:19.774Z] [unzip] mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/img/
+[debug] [2023-07-30T22:52:19.774Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2023-07-30T22:52:19.774Z] [unzip] Processing entry: client/assets/img/database.png
+[debug] [2023-07-30T22:52:19.774Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/img
+[debug] [2023-07-30T22:52:19.774Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/assets/img/database.png
+[debug] [2023-07-30T22:52:19.775Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=838 bytes, uncompressed_size=1504 bytes)
+[debug] [2023-07-30T22:52:19.775Z] [unzip] Processing entry: client/safari-pinned-tab.svg
+[debug] [2023-07-30T22:52:19.775Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.775Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/safari-pinned-tab.svg
+[debug] [2023-07-30T22:52:19.775Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=5406 bytes, uncompressed_size=5723 bytes)
+[debug] [2023-07-30T22:52:19.775Z] [unzip] Processing entry: client/mstile-150x150.png
+[debug] [2023-07-30T22:52:19.775Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.776Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/mstile-150x150.png
+[debug] [2023-07-30T22:52:19.776Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2023-07-30T22:52:19.776Z] [unzip] Processing entry: client/browserconfig.xml
+[debug] [2023-07-30T22:52:19.776Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.777Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/browserconfig.xml
+[debug] [2023-07-30T22:52:19.777Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2023-07-30T22:52:19.777Z] [unzip] Processing entry: client/robots.txt
+[debug] [2023-07-30T22:52:19.777Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.777Z] [unzip] Writing file: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/robots.txt
+[debug] [2023-07-30T22:52:19.778Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3064 bytes)
+[debug] [2023-07-30T22:52:19.778Z] [unzip] Processing entry: client/index.html
+[debug] [2023-07-30T22:52:19.778Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.778Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/index.html
+[debug] [2023-07-30T22:52:19.779Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=757 bytes, uncompressed_size=777 bytes)
+[debug] [2023-07-30T22:52:19.779Z] [unzip] Processing entry: client/favicon-16x16.png
+[debug] [2023-07-30T22:52:19.779Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.779Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/favicon-16x16.png
+[debug] [2023-07-30T22:52:19.779Z] [unzip] Entry: client/manifest.json (compressed_size=246 bytes, uncompressed_size=551 bytes)
+[debug] [2023-07-30T22:52:19.779Z] [unzip] Processing entry: client/manifest.json
+[debug] [2023-07-30T22:52:19.779Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.779Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/manifest.json
+[debug] [2023-07-30T22:52:19.780Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=1175 bytes, uncompressed_size=1175 bytes)
+[debug] [2023-07-30T22:52:19.780Z] [unzip] Processing entry: client/favicon-32x32.png
+[debug] [2023-07-30T22:52:19.780Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.780Z] [unzip] Writing file: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/favicon-32x32.png
+[debug] [2023-07-30T22:52:19.780Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=7602 bytes, uncompressed_size=7834 bytes)
+[debug] [2023-07-30T22:52:19.780Z] [unzip] Processing entry: client/android-chrome-192x192.png
+[debug] [2023-07-30T22:52:19.780Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client
+[debug] [2023-07-30T22:52:19.781Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/client/android-chrome-192x192.png
+[debug] [2023-07-30T22:52:19.781Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-30T22:52:19.781Z] [unzip] Processing entry: server/
+[debug] [2023-07-30T22:52:19.781Z] [unzip] mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/server/
+[debug] [2023-07-30T22:52:19.781Z] [unzip] Entry: server/server.js (compressed_size=343746 bytes, uncompressed_size=1346374 bytes)
+[debug] [2023-07-30T22:52:19.781Z] [unzip] Processing entry: server/server.js
+[debug] [2023-07-30T22:52:19.781Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/server
+[debug] [2023-07-30T22:52:19.781Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/server/server.js
+[debug] [2023-07-30T22:52:19.789Z] [unzip] Entry: server/server.js.map (compressed_size=289157 bytes, uncompressed_size=1325651 bytes)
+[debug] [2023-07-30T22:52:19.789Z] [unzip] Processing entry: server/server.js.map
+[debug] [2023-07-30T22:52:19.789Z] [unzip] else mkdir: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/server
+[debug] [2023-07-30T22:52:19.789Z] [unzip] deflating: /Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/server/server.js.map
+[debug] [2023-07-30T22:52:19.794Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-07-30T22:52:19.794Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-07-30T22:52:19.794Z] Starting Emulator UI with command {"binary":"node","args":["/Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/rohyeongseo/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-07-30T22:52:19.859Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-07-30T22:52:19.860Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/rohyeongseo/WebstormProjects/dbyfo/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/rohyeongseo/WebstormProjects/dbyfo/functions\" for Cloud Functions..."}}
+[debug] [2023-07-30T22:52:20.050Z] Validating nodejs source
+[debug] [2023-07-30T22:52:21.042Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-30T22:52:21.042Z] Building nodejs source
+[debug] [2023-07-30T22:52:21.042Z] Failed to find version of module node: reached end of search path /Users/rohyeongseo/WebstormProjects/dbyfo/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "19". Using node@19 from host. 
+[debug] [2023-07-30T22:52:21.043Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-30T22:52:21.045Z] Found firebase-functions binary at '/Users/rohyeongseo/WebstormProjects/dbyfo/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8016
+
+[debug] [2023-07-30T22:52:21.395Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-07-30T22:52:21.405Z] >>> [apiv2][query] PUT http://127.0.0.1:9000/.settings/rules.json ns=dbyfo-a0eae-default-rtdb
+[debug] [2023-07-30T22:52:21.405Z] >>> [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json "{\n  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}"
+[debug] [2023-07-30T22:52:21.557Z] 07:52:21.557 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - dbyfo-a0eae-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 68ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"07:52:21.557 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - dbyfo-a0eae-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 68ms, init: 0ms\n"}}
+[debug] [2023-07-30T22:52:21.589Z] 07:52:21.589 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace dbyfo-a0eae-default-rtdb status Active to Active
+ {"metadata":{"emulator":{"name":"database"},"message":"07:52:21.589 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace dbyfo-a0eae-default-rtdb status Active to Active\n"}}
+[debug] [2023-07-30T22:52:21.613Z] <<< [apiv2][status] PUT http://127.0.0.1:9000/.settings/rules.json 200
+[debug] [2023-07-30T22:52:21.613Z] <<< [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json {"status":"ok"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Database  │ 127.0.0.1:9000 │ http://127.0.0.1:4000/database  │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-07-30T22:52:34.404Z] 07:52:34.404 [FirebaseWorkerPool-1-3] WARN com.firebase.core.persistence.backend.dummy.EmulatorMetadataPersistence - Multiple projectIds are not recommended in single project mode. Requested 
+namespace dbyfo-a0eae, but the emulator is configured for dbyfo-a0eae-default-rtdb. To 
+opt-out of single project mode add/set the singleProjectMode: false property in 
+the firebase.json emulators config. 
+ {"metadata":{"emulator":{"name":"database"},"message":"07:52:34.404 [FirebaseWorkerPool-1-3] WARN com.firebase.core.persistence.backend.dummy.EmulatorMetadataPersistence - Multiple projectIds are not recommended in single project mode. Requested \nnamespace dbyfo-a0eae, but the emulator is configured for dbyfo-a0eae-default-rtdb. To \nopt-out of single project mode add/set the singleProjectMode: false property in \nthe firebase.json emulators config. \n"}}
+[debug] [2023-07-30T22:52:34.409Z] 07:52:34.408 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - dbyfo-a0eae successfully activated FBKV (SurveyIdle(0)) wait: 2ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"07:52:34.408 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - dbyfo-a0eae successfully activated FBKV (SurveyIdle(0)) wait: 2ms, init: 0ms\n"}}
+[debug] [2023-07-30T23:05:11.391Z] File /Users/rohyeongseo/WebstormProjects/dbyfo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/rohyeongseo/WebstormProjects/dbyfo/functions/index.js changed, reloading triggers"}}
+[debug] [2023-07-30T23:05:12.393Z] Validating nodejs source
+[debug] [2023-07-30T23:05:12.908Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-30T23:05:12.908Z] Building nodejs source
+[debug] [2023-07-30T23:05:12.908Z] Failed to find version of module node: reached end of search path /Users/rohyeongseo/WebstormProjects/dbyfo/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "19". Using node@19 from host. 
+[debug] [2023-07-30T23:05:12.909Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-30T23:05:12.910Z] Found firebase-functions binary at '/Users/rohyeongseo/WebstormProjects/dbyfo/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8100
+
+[debug] [2023-07-30T23:05:13.109Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://127.0.0.1:5001/dbyfo-a0eae/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/dbyfo-a0eae/us-central1/helloWorld)."}}
+[debug] [2023-07-30T23:05:50.677Z] File /Users/rohyeongseo/WebstormProjects/dbyfo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/rohyeongseo/WebstormProjects/dbyfo/functions/index.js changed, reloading triggers"}}
+[debug] [2023-07-30T23:05:51.679Z] Validating nodejs source
+[debug] [2023-07-30T23:05:51.966Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-30T23:05:51.966Z] Building nodejs source
+[debug] [2023-07-30T23:05:51.966Z] Failed to find version of module node: reached end of search path /Users/rohyeongseo/WebstormProjects/dbyfo/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "19". Using node@19 from host. 
+[debug] [2023-07-30T23:05:51.967Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-30T23:05:51.967Z] Found firebase-functions binary at '/Users/rohyeongseo/WebstormProjects/dbyfo/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8372
+
+[debug] [2023-07-30T23:05:52.133Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2023-07-30T23:06:30.931Z] File /Users/rohyeongseo/WebstormProjects/dbyfo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/rohyeongseo/WebstormProjects/dbyfo/functions/index.js changed, reloading triggers"}}
+[debug] [2023-07-30T23:06:31.933Z] Validating nodejs source
+[debug] [2023-07-30T23:06:32.202Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-30T23:06:32.202Z] Building nodejs source
+[debug] [2023-07-30T23:06:32.202Z] Failed to find version of module node: reached end of search path /Users/rohyeongseo/WebstormProjects/dbyfo/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "19". Using node@19 from host. 
+[debug] [2023-07-30T23:06:32.203Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-30T23:06:32.203Z] Found firebase-functions binary at '/Users/rohyeongseo/WebstormProjects/dbyfo/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8233
+
+[debug] [2023-07-30T23:06:32.350Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2023-07-30T23:07:50.373Z] File /Users/rohyeongseo/WebstormProjects/dbyfo/functions/package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/rohyeongseo/WebstormProjects/dbyfo/functions/package.json changed, reloading triggers"}}
+[debug] [2023-07-30T23:07:50.373Z] File /Users/rohyeongseo/WebstormProjects/dbyfo/functions/package-lock.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/rohyeongseo/WebstormProjects/dbyfo/functions/package-lock.json changed, reloading triggers"}}
+[debug] [2023-07-30T23:07:51.374Z] Validating nodejs source
+[debug] [2023-07-30T23:07:51.631Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-30T23:07:51.631Z] Building nodejs source
+[debug] [2023-07-30T23:07:51.631Z] Failed to find version of module node: reached end of search path /Users/rohyeongseo/WebstormProjects/dbyfo/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "19". Using node@19 from host. 
+[debug] [2023-07-30T23:07:51.632Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-30T23:07:51.632Z] Found firebase-functions binary at '/Users/rohyeongseo/WebstormProjects/dbyfo/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8959
+
+[debug] [2023-07-30T23:07:51.831Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
