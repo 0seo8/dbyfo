@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Swiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -30,15 +30,11 @@ const ImageSlider = ({ images }) => {
         className="mySwiper"
         slidesPerView={1}
       >
-        {/* eslint-disable-next-line react/prop-types */}
         {images?.map((imageUrl, index) => (
-          <S.ImageSlide
-            key={index}
-            onClick={handleImageClick}
-            // img={imageUrl}
-          >
-            <img src={imageUrl} alt={imageUrl} />
-          </S.ImageSlide>
+          <SwiperSlide key={index}>
+            {/* 이미지를 S.ImageSlide 스타일드 컴포넌트로 감싸기 */}
+            <S.ImageSlide onClick={handleImageClick} img={imageUrl} />
+          </SwiperSlide>
         ))}
       </Swiper>
     </>

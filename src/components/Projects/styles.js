@@ -4,7 +4,6 @@ export const ListWrapper = styled.div`
   margin-bottom: var(--base-margin);
   display: flex;
   flex-flow: column;
-
   ${(props) =>
     props.isActive ||
     `
@@ -51,8 +50,9 @@ export const ListContent = styled.div`
   background-color: #fff;
   font-family: 'Jeju Gothic', sans-serif;
   display: flex;
+  flex-flow: row; /* 가로 방향으로 배치 */
+  gap: 30px; /* 아이템 사이의 간격 */
   padding: 20px;
-  gap: 30px;
   margin: 0 30px;
 }
 
@@ -66,18 +66,16 @@ export const ListContent = styled.div`
 // `;
 
 export const SwiperWrapper = styled.div`
-  aspect-ratio: auto 16 / 9;
-  min-width: 771px;
-  flex-grow: 7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex: 7; /* 가용 공간의 7분의 1을 차지하도록 설정 */
+  width: 70%; /* 부모 컨테이너의 너비를 100%로 설정 */
+  position: relative;
 `;
 
 export const ListText = styled.div`
-  flex-grow: 3;
+  flex: 3; /* 가용 공간의 3분의 1을 차지하도록 설정 */
   font-family: var(--content-font-family);
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 배치 */
 `;
 
 export const Content = styled.p`
@@ -86,12 +84,14 @@ export const Content = styled.p`
   margin: 0;
 `;
 export const SubContent = styled.div`
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+
   div {
     min-width: 120px;
   }
+
   p {
     margin-top: 0;
   }

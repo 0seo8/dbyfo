@@ -6,20 +6,9 @@ import { selectDataSlice, selectUiSlice } from '../../store';
 import { setVisibleIndexes, handleToggleVisible } from '../../store/uiSlice';
 
 const Index = ({ item, idx }) => {
-  // const [visibleIndexes, setVisibleIndexes] = useState([]);
   const { value, searchKeyward, visibleIndexes } = useSelector(selectUiSlice);
   const { projects } = useSelector(selectDataSlice);
   const dispatch = useDispatch();
-
-  // const handleToggleVisible = (index) => {
-  //   dispatch(
-  //     setVisibleIndexes((prevVisibleIndexes) =>
-  //       prevVisibleIndexes.includes(index)
-  //         ? prevVisibleIndexes.filter((idx) => idx !== index)
-  //         : [...prevVisibleIndexes, index],
-  //     ),
-  //   );
-  // };
 
   useEffect(() => {
     if (value) {
@@ -30,7 +19,6 @@ const Index = ({ item, idx }) => {
   }, [value]);
 
   useEffect(() => {
-    // 검색어가 변경되면 리스트를 모두 닫음
     dispatch(setVisibleIndexes([]));
   }, [searchKeyward]);
 
@@ -39,7 +27,6 @@ const Index = ({ item, idx }) => {
   }, []);
 
   useEffect(() => {
-    // 검색어가 변경될 때마다 데이터를 순회하여 검색된 아이템들의 인덱스를 찾아냄
     if (searchKeyward === '') return;
     const filteredIndexes = projects.reduce((acc, item, idx) => {
       const { title, sub_title, content, year } = item;
