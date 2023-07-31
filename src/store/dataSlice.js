@@ -9,7 +9,6 @@ const initialState = {
 // async thunk
 export const fetchDatas = createAsyncThunk(`getData`, async () => {
   const result = await getData();
-  console.log('result', result);
   return result;
 });
 

@@ -9,12 +9,10 @@ const Project = () => {
   const { projects } = useSelector(selectDataSlice);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchDatas());
-    console.log('t쇼');
+    if (projects.length === 0) {
+      dispatch(fetchDatas());
+    }
   }, []);
-  useEffect(() => {
-    console.log('data', projects);
-  }, [projects]);
 
   return (
     <S.Container>

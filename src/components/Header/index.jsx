@@ -1,19 +1,22 @@
 import * as S from './styles';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { onRollup, onRollDown, setSearchValue } from '../../store/uiSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import LOGO from '../../assets/logo.png';
 import { BiMinus } from 'react-icons/bi';
 import { AiOutlinePlus } from 'react-icons/ai';
 import Dropdown from '../DropDown';
 import { useState } from 'react';
 import { fetchDatas, filterProjects } from '../../store/dataSlice';
+import { selectUiSlice } from '../../store';
 
 const Header = () => {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const [isShown, setIsShown] = useState(false);
+  const { initialProjects } = useSelector(selectUiSlice);
+
   const handleMouseEnter = () => {
     setIsShown(true);
   };
@@ -28,7 +31,14 @@ const Header = () => {
     dispatch(setSearchValue(searchValue));
   };
 
+  const RollDownHandler = () => {
+    dispatch(onRollDown());
+  };
+
   const onfilterData = (tag) => {
+    if (pathname !== '/') {
+      navigate('/');
+    }
     dispatch(filterProjects(tag));
   };
 
@@ -80,13 +90,15 @@ const Header = () => {
           {pathname === '/' && (
             <S.MenuSideBar>
               <S.ControllBtnWrapper>
-                <S.Btn onClick={() => dispatch(onRollup())}>
+                <S.Btn
+                  onClick={() => dispatch(onRollup(initialProjects?.length))}
+                >
                   <AiOutlinePlus />
                 </S.Btn>
                 {'    '}
                 <span> / </span>
                 {'    '}
-                <S.Btn onClick={() => dispatch(onRollDown())}>
+                <S.Btn onClick={RollDownHandler}>
                   <BiMinus />
                 </S.Btn>
               </S.ControllBtnWrapper>

@@ -1,43 +1,47 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import * as S from './styles';
 import ImageSlider from '../ImageSlider';
-import { useSelector } from 'react-redux';
-import { data } from '../../pages/Project/data';
-import { selectUiSlice } from '../../store';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectDataSlice, selectUiSlice } from '../../store';
+import { setVisibleIndexes, handleToggleVisible } from '../../store/uiSlice';
 
 const Index = ({ item, idx }) => {
-  const [visibleIndexes, setVisibleIndexes] = useState([]);
-  const { value, searchKeyward } = useSelector(selectUiSlice);
+  // const [visibleIndexes, setVisibleIndexes] = useState([]);
+  const { value, searchKeyward, visibleIndexes } = useSelector(selectUiSlice);
+  const { projects } = useSelector(selectDataSlice);
+  const dispatch = useDispatch();
 
-  const handleToggleVisible = (index) => {
-    setVisibleIndexes((prevVisibleIndexes) =>
-      prevVisibleIndexes.includes(index)
-        ? prevVisibleIndexes.filter((idx) => idx !== index)
-        : [...prevVisibleIndexes, index],
-    );
-  };
+  // const handleToggleVisible = (index) => {
+  //   dispatch(
+  //     setVisibleIndexes((prevVisibleIndexes) =>
+  //       prevVisibleIndexes.includes(index)
+  //         ? prevVisibleIndexes.filter((idx) => idx !== index)
+  //         : [...prevVisibleIndexes, index],
+  //     ),
+  //   );
+  // };
 
   useEffect(() => {
     if (value) {
-      setVisibleIndexes([...Array(data.length).keys()]);
+      dispatch(setVisibleIndexes([...Array(projects.length).keys()]));
     } else {
-      setVisibleIndexes([]);
+      dispatch(setVisibleIndexes([]));
     }
   }, [value]);
 
   useEffect(() => {
     // 검색어가 변경되면 리스트를 모두 닫음
-    setVisibleIndexes([]);
+    dispatch(setVisibleIndexes([]));
   }, [searchKeyward]);
 
   useEffect(() => {
-    setVisibleIndexes([]);
+    dispatch(setVisibleIndexes([]));
   }, []);
 
   useEffect(() => {
     // 검색어가 변경될 때마다 데이터를 순회하여 검색된 아이템들의 인덱스를 찾아냄
     if (searchKeyward === '') return;
-    const filteredIndexes = data.reduce((acc, item, idx) => {
+    const filteredIndexes = projects.reduce((acc, item, idx) => {
       const { title, sub_title, content, year } = item;
 
       // content 배열의 각 요소를 문자열로 합침
@@ -54,14 +58,14 @@ const Index = ({ item, idx }) => {
       }
       return acc;
     }, []);
-    setVisibleIndexes(filteredIndexes);
+    dispatch(setVisibleIndexes(filteredIndexes));
   }, [searchKeyward]);
   return (
     <>
       {' '}
       <S.ListWrapper key={idx} isActive={visibleIndexes.includes(idx)}>
         <S.ListTitle
-          onClick={() => handleToggleVisible(idx)}
+          onClick={() => dispatch(handleToggleVisible(idx))}
           isActive={visibleIndexes.includes(idx)}
         >
           <S.Title>
