@@ -7,13 +7,13 @@ import { BiMinus } from 'react-icons/bi';
 import { AiOutlinePlus } from 'react-icons/ai';
 import Dropdown from '../DropDown';
 import { useState } from 'react';
+import { fetchDatas, filterProjects } from '../../store/dataSlice';
 
 const Header = () => {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const [isShown, setIsShown] = useState(false);
-
   const handleMouseEnter = () => {
     setIsShown(true);
   };
@@ -26,6 +26,10 @@ const Header = () => {
     e.preventDefault();
     const searchValue = e.target.search.value.trim();
     dispatch(setSearchValue(searchValue));
+  };
+
+  const onfilterData = (tag) => {
+    dispatch(filterProjects(tag));
   };
 
   return (
@@ -50,10 +54,10 @@ const Header = () => {
               </NavLink>
               <Dropdown isShown={isShown}>
                 <ul>
-                  <li>All</li>
-                  <li>Product</li>
-                  <li>Service</li>
-                  <li>Package</li>
+                  <li onClick={() => dispatch(fetchDatas())}>All</li>
+                  <li onClick={() => onfilterData('product')}>Product</li>
+                  <li onClick={() => onfilterData('service')}>Service</li>
+                  <li onClick={() => onfilterData('package')}>Package</li>
                 </ul>
               </Dropdown>
             </S.DropdownContainer>

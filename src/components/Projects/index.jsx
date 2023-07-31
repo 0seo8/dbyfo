@@ -3,11 +3,11 @@ import * as S from './styles';
 import ImageSlider from '../ImageSlider';
 import { useSelector } from 'react-redux';
 import { data } from '../../pages/Project/data';
+import { selectUiSlice } from '../../store';
 
 const Index = ({ item, idx }) => {
   const [visibleIndexes, setVisibleIndexes] = useState([]);
-  const ui = useSelector((state) => state.ui.value);
-  const keyword = useSelector((state) => state.ui.searchKeyward);
+  const { value, searchKeyward } = useSelector(selectUiSlice);
 
   const handleToggleVisible = (index) => {
     setVisibleIndexes((prevVisibleIndexes) =>
@@ -18,17 +18,17 @@ const Index = ({ item, idx }) => {
   };
 
   useEffect(() => {
-    if (ui) {
+    if (value) {
       setVisibleIndexes([...Array(data.length).keys()]);
     } else {
       setVisibleIndexes([]);
     }
-  }, [ui]);
+  }, [value]);
 
   useEffect(() => {
     // 검색어가 변경되면 리스트를 모두 닫음
     setVisibleIndexes([]);
-  }, [keyword]);
+  }, [searchKeyward]);
 
   useEffect(() => {
     setVisibleIndexes([]);
@@ -36,7 +36,7 @@ const Index = ({ item, idx }) => {
 
   useEffect(() => {
     // 검색어가 변경될 때마다 데이터를 순회하여 검색된 아이템들의 인덱스를 찾아냄
-    if (keyword === '') return;
+    if (searchKeyward === '') return;
     const filteredIndexes = data.reduce((acc, item, idx) => {
       const { title, sub_title, content, year } = item;
 
@@ -45,17 +45,17 @@ const Index = ({ item, idx }) => {
 
       // title, content, year를 검색어와 비교
       if (
-        title.toLowerCase().includes(keyword.toLowerCase()) ||
-        sub_title.toLowerCase().includes(keyword.toLowerCase()) ||
-        contentString.toLowerCase().includes(keyword.toLowerCase()) ||
-        year.includes(keyword) // year가 문자열이므로 includes로 비교
+        title.toLowerCase().includes(searchKeyward.toLowerCase()) ||
+        sub_title.toLowerCase().includes(searchKeyward.toLowerCase()) ||
+        contentString.toLowerCase().includes(searchKeyward.toLowerCase()) ||
+        year.includes(searchKeyward) // year가 문자열이므로 includes로 비교
       ) {
         acc.push(idx);
       }
       return acc;
     }, []);
     setVisibleIndexes(filteredIndexes);
-  }, [keyword]);
+  }, [searchKeyward]);
   return (
     <>
       {' '}
