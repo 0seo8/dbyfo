@@ -16,7 +16,7 @@ const Index = ({ item, idx }) => {
     } else {
       dispatch(setVisibleIndexes([]));
     }
-  }, [value]);
+  }, [projects]);
 
   useEffect(() => {
     dispatch(setVisibleIndexes([]));
