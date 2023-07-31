@@ -1,10 +1,22 @@
 :root {
+
+    /*  font-family 모움 */
     --main-font-family: helvetica, Arial, Helvetica, sans-serif;
+    --tab-font-family: 'Noto Sans KR', sans-serif;
+
+    /* font-size 모음*/
+    --main-base-size: 14px;
+    --tab-font-size: 14px;
+
+    /*  컬러 모음 */
     --main-background-color: #cbcbcb;
     --main-acitvity-color: #fcff00;
-    --main-base-size: 14px;
+
+
     --base-font-color: '#000';
     --white-font-color: '#fff';
+
+
 /*    상의 되지 않은 컬러 */
     --font-color-gray:#B2AEAD;
 
@@ -13,11 +25,12 @@
     --base-padding-horizontal: 20px;
 
 
+/*  Header Tab Bar  */
 
 
 
 
-/*    Studio Section color*/
+
 
     /* 카드 사이사이 여백 */
     --studiocard-card-padding: 20px;
@@ -27,4 +40,5 @@
 
     --card-background-color: #fff;
     --base-margin: 20px;
+
 }
