@@ -13,10 +13,20 @@
       "client": ["FIET"]
     },
     "img": [
-      "https://cdn.imweb.me/thumbnail/20230720/807575f8d46f6.jpg",
-      "https://cdn.imweb.me/thumbnail/20230720/2abf5929eb24b.jpg",
-      "https://cdn.imweb.me/thumbnail/20230720/ecbfd7b6c440b.jpg",
-      "https://cdn.imweb.me/thumbnail/20230720/a50ef8c737d89.jpg"
+      "assets/loopcore/1.jpeg",
+      "assets/loopcore/2.jpeg",
+      "assets/loopcore/3.jpeg",
+      "assets/loopcore/4.jpeg",
+      "assets/loopcore/5.jpeg",
+      "assets/loopcore/6.jpeg",
+      "assets/loopcore/7.jpeg",
+      "assets/loopcore/8.jpeg",
+      "assets/loopcore/9.jpeg",
+      "assets/loopcore/10.jpeg",
+      "assets/loopcore/11.jpeg",
+      "assets/loopcore/12.jpeg",
+      "assets/loopcore/13.jpeg",
+      "assets/loopcore/14.jpeg"
     ]
   },
   {
@@ -34,10 +44,18 @@
       "Manufacturer": ["soluM"]
     },
     "img": [
-      "https://cdn.imweb.me/thumbnail/20230720/537adfaaa6706.jpg",
-      "https://cdn.imweb.me/thumbnail/20230720/616043b84905a.jpg",
-      "https://cdn.imweb.me/thumbnail/20230720/88237046e30f1.jpg",
-      "https://cdn.imweb.me/thumbnail/20230720/303de19a92ed5.jpg"
+      "assets/looppackage/1.jpeg",
+      "assets/looppackage/2.jpeg",
+      "assets/looppackage/3.jpeg",
+      "assets/looppackage/4.jpeg",
+      "assets/looppackage/5.jpeg",
+      "assets/looppackage/6.jpeg",
+      "assets/looppackage/7.jpeg",
+      "assets/looppackage/8.jpeg",
+      "assets/looppackage/9.jpeg",
+      "assets/looppackage/10.jpeg",
+      "assets/looppackage/11.jpeg",
+      "assets/looppackage/12.jpeg"
     ]
   },
   {
