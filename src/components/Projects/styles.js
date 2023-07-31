@@ -77,6 +77,7 @@ export const SwiperWrapper = styled.div`
 
 export const ListText = styled.div`
   flex-grow: 3;
+  font-family: var(--content-font-family);
 `;
 
 export const Content = styled.p`

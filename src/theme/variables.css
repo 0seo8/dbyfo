@@ -2,7 +2,8 @@
 
     /*  font-family 모움 */
     --main-font-family: helvetica, Arial, Helvetica, sans-serif;
-    --tab-font-family: 'Noto Sans KR', sans-serif;
+    --tab-font-family: 'Noto Sans', sans-serif;
+    --content-font-family: 'Noto Sans KR', sans-serif;
 
     /* font-size 모음*/
     --main-base-size: 14px;
